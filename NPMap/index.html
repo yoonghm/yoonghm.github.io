@@ -52,6 +52,12 @@
         ,fillOpacity: 0.2
         ,strokeWeight: 0
       });
+
+      var marker = new google.maps.Marker({
+        position: mapOptions.center,
+        map: map,
+        title: 'Blk 23 (Electrical Engineering)'
+      }); 
     }
 
     google.maps.event.addDomListener(window, 'load', initialize);
