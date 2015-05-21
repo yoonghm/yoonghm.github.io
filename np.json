@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { 
+        "content": [
+          "<div id=\"content\">",
+          "<h3 id=\"heading\">",
+          "<a href=\"http://www.np.edu.sg/soe/courses/ee/Pages/ee.aspx\">",
+          "Blk 23 - Electrical Engineering</a></h1>",
+          "</div>"
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+            [ 103.77562433481216, 1.3340504438421340 ],
+            [ 103.77559751272202, 1.3338707845414601 ],
+            [ 103.77513349056244, 1.3339351401133503 ],
+            [ 103.77516299486160, 1.3341201623731810 ],
+            [ 103.77562433481216, 1.3340504438421340 ]
+          ]]
+      }
+    }
+  ]
+}

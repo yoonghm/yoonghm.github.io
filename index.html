@@ -1,1 +1,104 @@
-"Hello World" 
+<!DOCTYPE html>
+<!-- Run python -m SimpleHTTPServer 8080 -->
+<html>
+<head>
+  <title>Ngee Ann Polytechnic</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <style>
+    html, body, #map {
+      height: 100%;
+      margin: 0px;
+      padding: 0px
+    }
+  </style>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+  <script>
+var map;
+var infowindow;
+
+function initialize() {
+  var mapOptions = 
+    {center: new google.maps.LatLng(1.333039, 103.775852)
+    ,zoom: 17
+    ,mapTypeId: google.maps.MapTypeId.ROADMAP
+    ,mapTypeControl: true
+    ,overviewMapControl:true
+    ,panControl: true
+    ,panControlOptions: 
+      {position: google.maps.ControlPosition.RIGHT_CENTER
+      }
+    ,rotateControl:true
+    ,zoomControl: true
+    ,zoomControlOptions: 
+      {style: google.maps.ZoomControlStyle.LARGE
+      ,position: google.maps.ControlPosition.RIGHT_CENTER
+      }
+    ,scaleControl: true
+    ,streetViewControl: true
+    ,streetViewControlOptions: 
+      {position: google.maps.ControlPosition.RIGHT_CENTER
+      }
+    };
+
+  // Create map 
+  map = new google.maps.Map(document.getElementById('map'), mapOptions);
+  infowindow = new google.maps.InfoWindow();
+
+  /* BUG:
+     This will cause loadGeoJson to give large strokeWeight
+     followed by the strokeWeight set by setStyle()
+  */
+/*
+  // Create boundingbox
+  var ne = new google.maps.LatLng(1.337566, 103.778727);
+  var sw = new google.maps.LatLng(1.329221, 103.770874);
+  var bounds = new google.maps.LatLngBounds();
+  bounds.extend(ne);
+  bounds.extend(sw);
+  map.fitBounds(bounds);
+  new google.maps.Rectangle(
+    {bounds: bounds
+    ,map: map
+    ,fillColor: '#000000'
+    ,fillOpacity: 0.2
+    ,strokeWeight: 0
+  });
+*/
+
+  // Create marker
+  var marker = new google.maps.Marker({
+    position: mapOptions.center,
+    map: map,
+    title: 'Blk 23 (Electrical Engineering)'
+  }); 
+
+  // Load GeoJson data
+  map.data.loadGeoJson('./np.json');
+  var buildingStyle = {
+    fillColor: 'green',
+    strokeWeight: 1,
+    strokeColor: 'blue'
+  }
+  map.data.setStyle(buildingStyle);
+
+  // Set event listener open infowindow
+  map.data.addListener('click', function(event) {
+    infowindow.setContent(event.feature.getProperty('content').join(""));
+    infowindow.setPosition(event.latLng);
+    infowindow.setOptions({pixelOffset: new google.maps.Size(0,-10)});
+    infowindow.open(map);
+    google.maps.event.addListener(map, 'click', function() {
+      infowindow.close();
+    });
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+</head>
+
+<body>
+  <div id="map"></div>
+</body>
+</html>
