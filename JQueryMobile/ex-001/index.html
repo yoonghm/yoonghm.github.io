@@ -15,7 +15,7 @@
 
   <div data-role="main" class="ui-content">
     <p>Main body of your page 1...</p>
-    <p><a href="#p2">Next page</a></p>
+    <p><a href="#p2">Next page (No transition)</a></p>
   </div>
 
   <div data-role="footer">
@@ -31,7 +31,7 @@
   <div data-role="main" class="ui-content">
     <p>Main body of your page 2...</p>
     <p><a href="#p1">Previous page</a></p>
-    <p><a href="#p3">Next page</a></p>
+    <p><a href="#p3" data-transition="fade">Next page (Fade transition)</a></p>
   </div>
 
   <div data-role="footer">
@@ -46,13 +46,30 @@
 
   <div data-role="main" class="ui-content">
     <p>Main body of your page 3 (A dialog)</p>
-    <p><a href="#p2">Previous page</a></p>
+    <p><a href="#p2" data-transition="fade">Previous page (Fade transition)</a></p>
+    <p><a href="#p4" data-transition="flip">Next page (Flip transition)</a></p>
   </div>
 
   <div data-role="footer">
     <h1>Footer for page 3</h1>
   </div>
 </div> 
+
+<div data-role="page" data-dialog="true" id="p4">
+  <div data-role="header">
+    <h1>Header For Page 4</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Main body of your page 4 (A dialog)</p>
+    <p><a href="#p3" data-transition="flip">Previous page (Flip transition)</a></p>
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer for page 4</h1>
+  </div>
+</div> 
+
 
 </body>
 </html>
