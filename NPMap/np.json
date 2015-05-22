@@ -6,9 +6,10 @@
       "properties": { 
         "content": [
           "<div id=\"content\">",
-          "<h3 id=\"heading\">",
-          "<a href=\"http://www.np.edu.sg/soe/courses/ee/Pages/ee.aspx\">",
-          "Blk 23 - Electrical Engineering</a></h1>",
+          "<h4 id=\"heading\">",
+          "<a href=\"http://www.np.edu.sg/soe/courses/ee/Pages/ee.aspx\"",
+          "target=\"_blank\">",
+          "Blk 23 - Electrical Engineering</a></h4>",
           "</div>"
         ]
       },
