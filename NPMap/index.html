@@ -28,7 +28,7 @@ function handleGeolocation(position) {
     map: map,
     position: youPos,
     animation: google.maps.Animation.DROP,
-    title: 'You'
+    title: 'You are here!'
   }); 
   google.maps.event.addListener(youMarker, 'click', toggleBounce);
 }
