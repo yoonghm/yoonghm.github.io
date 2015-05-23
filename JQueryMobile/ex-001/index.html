@@ -34,8 +34,14 @@
     <h1>Header For Page 2</h1>
   </div>
 
-  <div data-role="main" class="ui-content">
+  <div data-role="panel" id="myPanel"> 
+    <h2>Panel Header</h2>
+    <p>You can close the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>
+  </div> 
+
+  <div data-role="main" class="ui-content"> 
     <p>Main body of your page 2...</p>
+    <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Open Panel</a>
     <p><a href="#p1" class="ui-btn">Prev</a></p>
     <p><a href="#p3" class="ui-btn" data-transition="fade">Next</a></p>
   </div>
