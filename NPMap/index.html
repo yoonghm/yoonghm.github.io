@@ -3,27 +3,28 @@
 <html>
 <head>
   <title>Ngee Ann Polytechnic</title>
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-  <meta charset="utf-8">
+  <meta name="viewport" charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> 
   <style>
-    html, body, #map {
-      height: 100%;
-      margin: 0px;
-      padding: 0px
+    #content {
+      padding: 0px !important;
     }
   </style>
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
   <script>
+
 var map;
+var NPPos = new google.maps.LatLng(1.333039, 103.775852);
 var infowindow;
 var youMarker;
 var youPos;
 
-function handleGeolocation(position) {
-  youPos = new google.maps.LatLng(position.coords.latitude,
-                                  position.coords.longitude);
-
+function handleGeolocation(pos) {
+  youPos = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
   youMarker = new google.maps.Marker({
     map: map,
     position: youPos,
@@ -49,9 +50,9 @@ function handleNoGeolocation(errorFlag) {
   }
 }
 
-function initialize() {
+function initMap() {
   var mapOptions = 
-    {center: new google.maps.LatLng(1.333039, 103.775852)
+    {center: NPPos
     ,zoom: 17
     ,mapTypeId: google.maps.MapTypeId.ROADMAP
     ,mapTypeControl: true
@@ -74,7 +75,7 @@ function initialize() {
     };
 
   // Create map 
-  map = new google.maps.Map(document.getElementById('map'), mapOptions);
+  map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
   infowindow = new google.maps.InfoWindow();
 
   /* BUG:
@@ -98,7 +99,7 @@ function initialize() {
   });
 */
 
-  // Load GeoJson data
+  /* Load GeoJson data */
   map.data.loadGeoJson('./np.json');
   var buildingStyle = {
     fillColor: 'green',
@@ -107,7 +108,7 @@ function initialize() {
   }
   map.data.setStyle(buildingStyle);
 
-  // Set event listener open infowindow
+  /* Set event listener open infowindow */
   map.data.addListener('click', function(event) {
     infowindow.setContent(event.feature.getProperty('content').join(""));
     infowindow.setPosition(event.latLng);
@@ -125,11 +126,47 @@ function initialize() {
   }
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
+/* Calculate available dimension from current active page for Google Map */
+function getRealContentHeight() {
+  var hdr = $.mobile.activePage.find("div[data-role='header']:visible");
+  var fdr = $.mobile.activePage.find("div[data-role='footer']:visible");
+  var cnt = $.mobile.activePage.find("div[data-role='content']:visible:visible");
+  var vw_height = $(window).height();
+
+  var cnt_height = vw_height - hdr.outerHeight() - fdr.outerHeight();
+  if ((cnt.outerHeight() - hdr.outerHeight() - fdr.outerHeight()) <= vw_height) {
+    cnt_height -= (cnt.outerHeight() - cnt.height());
+  } 
+  return cnt_height;
+}
+
+$(document).on('pageshow', '#mainpage', function(event, data){   
+  $('#content').height(getRealContentHeight());
+  initMap();
+});
+
+$(window).resize(function() {
+  $('#content').height(getRealContentHeight());
+  google.maps.event.trigger(map, 'resize');
+  map.setCenter(NPPos);
+});
+ 
   </script>
 </head>
 
 <body>
-  <div id="map"></div>
+  <div data-role="page" id="mainpage">
+    <div data-theme="a" data-role="header">
+      <h3>Welcome to Ngee Ann Polytechnic</h3>
+    </div>
+
+    <div data-role="content" id="content">
+      <div id="map_canvas" style="height:100%"></div>
+    </div>
+
+    <div data-theme="a" data-role="footer" data-position="fixed">
+      <h3>Status</h3>
+    </div>
+  </div>
 </body>
 </html>
