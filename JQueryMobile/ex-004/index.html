@@ -17,37 +17,8 @@
   <script>
      
 var NPPos = { 'center': '1.333039, 103.775852', 'zoom': 17 };
-    
-$('#map_canvas').live('pageinit', function() {
-  demo.add('places_1', function() {
-    $('#map_canvas_3').gmap({'center': NPPos.center, 'zoom': NPPos.zoom, 'disableDefaultUI':true, 'callback': function() {
-      var self = this;
-      var control = self.get('control', function() {
-        $(self.el).append('<div id="control"><div><input id="places-search" class="ui-bar-d ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-d ui-autocomplete-input" type="text"/></div></div>');
-        self.autocomplete($('#places-search')[0], function(ui) {
-          self.clear('markers');
-          self.set('bounds', null);
-          self.placesSearch({ 'location': ui.item.position, 'radius': '5000' }, function(results, status) {
-            if ( status === 'OK' ) {
-              $.each(results, function(i, item) {
-                self.addMarker({ 'id': item.id, 'position': item.geometry.location, 'bounds':true }).click(function() {
-                  self.openInfoWindow({'content': '<h4>'+item.name+'</h4>'}, this);
-                });
-              });
-            }
-          });
-        });
-        return $('#control')[0];
-      });
-      self.addControl(new control(), 1);
-    }});
-  }).load('places_1');
-});
+$('#map_canvas').gmap({ 'center': '42.345573,-71.098326' });
 
-$('#places').live('pageshow', function() {
-  demo.add('places_2', function() { $('#map_canvas_3').gmap('refresh'); }).load('places_2');
-});
-      
   </script>
 </head>
 <body>
