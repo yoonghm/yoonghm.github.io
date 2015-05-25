@@ -14,12 +14,6 @@
   <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
-  <script>
-     
-var NPPos = { 'center': '1.333039, 103.775852', 'zoom': 17 };
-$('#map_canvas').gmap({ 'center': '42.345573,-71.098326' });
-
-  </script>
 </head>
 <body>
   <div id="home" data-role="page">
@@ -28,7 +22,14 @@ $('#map_canvas').gmap({ 'center': '42.345573,-71.098326' });
     </div>
 
     <div data-role="content" id="content">
-      <div id="map_canvas" style="height:100%"></div>
+      <ul data-role="listview" data-filter="true" data-filter-placeholder="Search fruits..." data-inset="true">
+        <li><a href="#">Apple</a></li>
+        <li><a href="#">Banana</a></li>
+        <li><a href="#">Cherry</a></li>
+        <li><a href="#">Cranberry</a></li>
+        <li><a href="#">Grape</a></li>
+        <li><a href="#">Orange</a></li>
+      </ul>
     </div>
 
     <div data-role="footer" data-position="fixed">
