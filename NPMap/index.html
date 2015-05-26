@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- Run python -m SimpleHTTPServer 8080 -->
-<html>
+<html lang="en">
 <head>
   <title>Ngee Ann Polytechnic</title>
   <meta name="viewport" charset="utf-8">
@@ -15,31 +15,44 @@
   <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+  <script src="./geolocationmarker-compiled.js"></script>*/
   <script>
 
 var map;
 var NPPos = new google.maps.LatLng(1.333039, 103.775852);
 var infowindow;
-var youMarker;
 var youPos;
+var geoMarker;
+var poly;
+var polyOption1 = {
+  strokeColor: '#000000',
+  strokeOpacity: 1.0,
+  strokeWeight: 3
+};
+var path;
 
 function handleGeolocation(pos) {
-  youPos = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
-  youMarker = new google.maps.Marker({
-    map: map,
-    position: youPos,
-    animation: google.maps.Animation.DROP,
-    title: 'You are here!'
-  }); 
-  google.maps.event.addListener(youMarker, 'click', toggleBounce);
-}
+  console.log("HandleGeolocation()");
+  geoMarker = new GeolocationMarker();
+  geoMarker.setCircleOptions({fillColor: '#808080'});
 
-function toggleBounce() {
-  if (youMarker.getAnimation() != null) {
-    youMarker.setAnimation(null);
-  } else {
-    youMarker.setAnimation(google.maps.Animation.BOUNCE);
-  }
+  poly = new google.maps.Polyline(polyOption1);
+  poly.setMap(map);
+  path = poly.getPath();
+
+  google.maps.event.addListener(geoMarker, 'position_changed', function() {
+    console.log("Accuracy: " + geoMarker.getAccuracy());
+    console.log("Position: " + geoMarker.getPosition());
+    // if (geoMarker.getAccuracy() < 80) {
+      path.push(geoMarker.getPosition());
+    // }
+  });
+
+  google.maps.event.addListener(geoMarker, 'geolocation_error', function(event) {
+    alert('There was an error obtaining your position. Message: ' + event.message);
+  });
+
+  geoMarker.setMap(map);
 }
 
 function handleNoGeolocation(errorFlag) {
@@ -77,27 +90,6 @@ function initMap() {
   // Create map 
   map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
   infowindow = new google.maps.InfoWindow();
-
-  /* BUG:
-     This will cause loadGeoJson to give large strokeWeight
-     followed by the strokeWeight set by setStyle()
-  */
-/*
-  // Create boundingbox
-  var ne = new google.maps.LatLng(1.337566, 103.778727);
-  var sw = new google.maps.LatLng(1.329221, 103.770874);
-  var bounds = new google.maps.LatLngBounds();
-  bounds.extend(ne);
-  bounds.extend(sw);
-  map.fitBounds(bounds);
-  new google.maps.Rectangle(
-    {bounds: bounds
-    ,map: map
-    ,fillColor: '#000000'
-    ,fillOpacity: 0.2
-    ,strokeWeight: 0
-  });
-*/
 
   /* Load GeoJson data */
   map.data.loadGeoJson('./np.json');
@@ -156,17 +148,138 @@ $(window).resize(function() {
 
 <body>
   <div data-role="page" id="mainpage">
-    <div data-theme="a" data-role="header">
+    <div data-role="header">
+      <a href="#navSearch" class="ui-btn ui-icon-search ui-btn-icon-left ui-nodisc-icon ui-alt-icon ui-btn-icon-notext">Search</a>
       <h3>Welcome to Ngee Ann Polytechnic</h3>
+    </div>
+
+    <div data-role="panel" id="navSearch">
+
+      <!-- Buildings -->
+
+      <div data-role="collapsible">
+        <h4>Buildings:</h4>
+        <ul data-role="listview" data-filter="true">
+          <li><a href="#">Blk  1</a></li> <li><a href="#">Blk  4</a></li>
+          <li><a href="#">Blk  5</a></li> <li><a href="#">Blk  6</a></li>
+          <li><a href="#">Blk  7</a></li> <li><a href="#">Blk  8</a></li>
+          <li><a href="#">Blk 16</a></li> <li><a href="#">Blk 18</a></li>
+          <li><a href="#">Blk 20</a></li> <li><a href="#">Blk 22</a></li>
+          <li><a href="#">Blk 23</a></li> <li><a href="#">Blk 25</a></li>
+          <li><a href="#">Blk 27</a></li> <li><a href="#">Blk 31</a></li>
+          <li><a href="#">Blk 34</a></li> <li><a href="#">Blk 35</a></li>
+          <li><a href="#">Blk 37</a></li> <li><a href="#">Blk 39</a></li>
+          <li><a href="#">Blk 40</a></li> <li><a href="#">Blk 43</a></li>
+          <li><a href="#">Blk 44</a></li> <li><a href="#">Blk 46</a></li>
+          <li><a href="#">Blk 47</a></li> <li><a href="#">Blk 50</a></li>
+          <li><a href="#">Blk 51</a></li> <li><a href="#">Blk 52</a></li>
+          <li><a href="#">Blk 53</a></li> <li><a href="#">Blk 50</a></li>
+          <li><a href="#">Blk 53</a></li> <li><a href="#">Blk 54</a></li>
+          <li><a href="#">Blk 56</a></li> <li><a href="#">Blk 58</a></li>
+          <li><a href="#">Blk 68</a></li> <li><a href="#">Blk 71</a></li>
+          <li><a href="#">Blk 72</a></li> <li><a href="#">Blk 73</a></li>
+          <li><a href="#">Blk 80</a></li> <li><a href="#">Blk 81</a></li>
+          <li><a href="#">Blk 82</a></li> <li><a href="#">Blk 83</a></li>
+          <li><a href="#">Blk 90</a></li> <li><a href="#">Blk 92></a></li>
+          <li><a href="#">Blk 94</a></li> <li><a href="#">SIT</a></li>
+        </ul>
+      </div>
+
+<!-- 
+      <label for="select-building" class="select">Buildings:</label>
+      <select name="select-building" id="select-building" data-mini="true">
+        <option value="Blk01">Blk  1</option> <option value="Blk04">Blk  4</option>
+        <option value="Blk05">Blk  5</option> <option value="Blk06">Blk  6</option>
+        <option value="Blk07">Blk  7</option> <option value="Blk08">Blk  8</option>
+        <option value="Blk16">Blk 16</option> <option value="Blk18">Blk 18</option>
+        <option value="Blk20">Blk 20</option> <option value="Blk22">Blk 22</option>
+        <option value="Blk23">Blk 23</option> <option value="Blk25">Blk 25</option>
+        <option value="Blk27">Blk 27</option> <option value="Blk31">Blk 31</option>
+        <option value="Blk34">Blk 34</option> <option value="Blk35">Blk 35</option>
+        <option value="Blk37">Blk 37</option> <option value="Blk39">Blk 39</option>
+        <option value="Blk40">Blk 40</option> <option value="Blk43">Blk 43</option>
+        <option value="Blk44">Blk 44</option> <option value="Blk46">Blk 46</option>
+        <option value="Blk47">Blk 47</option> <option value="Blk50">Blk 50</option>
+        <option value="Blk51">Blk 51</option> <option value="Blk52">Blk 52</option>
+        <option value="Blk53">Blk 53</option> <option value="Blk54">Blk 54</option>
+        <option value="Blk56">Blk 56</option> <option value="Blk58">Blk 58</option>
+        <option value="Blk68">Blk 68</option> <option value="Blk71">Blk 71</option>
+        <option value="Blk72">Blk 72</option> <option value="Blk73">Blk 73</option>
+        <option value="Blk80">Blk 80</option> <option value="Blk81">Blk 81</option>
+        <option value="Blk82">Blk 82</option> <option value="Blk83">Blk 83</option>
+        <option value="Blk90">Blk 90</option> <option value="Blk92">Blk 92</option>
+        <option value="Blk94">Blk 94</option> <option value="SIT"  >SIT</option>
+      </select>
+
+ -->
+      <!-- Car parks -->
+<!-- 
+      <label for="select-carpark" class="select">Carparks:</label>
+      <select name="select-carpark" id="select-carpark" data-mini="true">
+        <option value="CPA">Carpark A</option> <option value="CPB">Carpark B</option>
+        <option value="CPC">Carpark C</option> <option value="CPD">Carpark D</option>
+        <option value="CPE">Carpark E</option> <option value="CPF">Carpark F</option>
+        <option value="CPG">Carpark G</option> <option value="CPH">Carpark H</option>
+        <option value="CPJ">Carpark J</option> <option value="CPK">Carpark K</option>
+        <option value="CPL">Carpark L</option> <option value="CPP">Carpark P</option>
+        <option value="CPN">Carpark N</option> <option value="CPV1">Visitor Carpark 1</option>
+        <option value="CPV2">Visitor Carpark 2</option> <option value="CPV3">Visitor Carpark 3</option>
+      </select>
+ -->
+      <!-- Schools & Division -->
+<!-- 
+      <label for="select-acad" class="select">Academic</label>
+      <select name="select-acad" id="select-acad" data-mini="true">
+        <option value="BA">School of Business and Accountancy</option>
+        <option value="CET">CET Academy</option>
+        <option value="DE">School of Design and Environment</option>
+        <optgroup label="School of Engineering">
+          <option value="SOE-EE">Electrical Engineering Division</option>
+          <option value="SOE-ECE">Electronic and Computer Engineering Division</option>
+          <option value="SOE-ME">Mechanical Engineering Division</option>
+        </optgroup>
+        <option value="FMS">School of Film and Media Studies</option>
+        <option value="HMS">School of Humanities and Social Sciences</option>
+        <option value="ICT">School of InfoComm Technology</option>
+        <option value="IS">School of Interdisciplinary Studies</option>
+        <option value="LSCT">School of Life Sciences and Chemical Technology</option>
+        <option value="HS">School of Health Sciences</option>
+      </select>
+ -->
+      <!-- Admin Offices and Support Centers -->
+<!-- 
+      <label for="select-nonAcad" class="select">Non-Academic:</label>
+      <select name="select-nonAcad" id="select-nonAcad" data-mini="true">
+        <option value="AA">Academic Affairs Office</option>
+        <option value="APDO">Acad Partnerships and Dev Office</option>
+        <optgroup label="NP/AEM Centre of Innovation">
+          <option value="COI-EWT">Environment and Water Technology</option>
+          <option value="COI-MOT">Marine and Offshore Technology</option>
+        </optgroup>
+        <option value="CC">Computer Centre</option>
+        <option value="CorpComp">Corporate Communications</option>
+        <option value="ED">Estate Development Office</option>
+        <option value="EM">Estate Management Office</option>
+        <option value="FIN">Finance Office</option>
+        <option value="HR">Human Resource Office</option>
+        <option value="IA">Internal Audit Office</option>
+        <option value="LIB">Library</option>
+        <option value="PPO">Planning and Project Office</option>
+        <option value="RMO">Risk Management Office</option>
+        <option value="SDAR">Student Development and Alumni Relations</option>
+        <option value="SLD">Staff Learning and Development Office</option>
+        <option value="SS">Student Service Office</option>
+        <option value="TDI">Technology Development and Innovation Office</option>
+        <option value="TLC">Teachning and Learning Centre</option>
+        <option value="TSB">The Sandbox</option>
+      </select>
+ -->
     </div>
 
     <div data-role="content" id="content">
       <div id="map_canvas" style="height:100%"></div>
     </div>
 
-    <div data-theme="a" data-role="footer" data-position="fixed">
-      <h3>Status</h3>
-    </div>
   </div>
 </body>
 </html>
