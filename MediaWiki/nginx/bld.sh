@@ -8,6 +8,7 @@
 --with-http_addition_module    \
 --with-http_mp4_module         \
 --with-http_flv_module         \
+--with-ipv6                    \
 --with-mail                    \
 --with-mail_ssl_module         \
 --with-http_stub_status_module \
