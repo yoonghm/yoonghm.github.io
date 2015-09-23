@@ -1,0 +1,2263 @@
+
+Using the extension vendor autoloader ...
+
+SemanticMediaWiki 2.2.2 (SMWSQLStore3 / postgres) ...
+
+PHPUnit 4.8.9 by Sebastian Bergmann and contributors.
+
+Runtime:	PHP 5.6.13RC1
+Configuration:	/home/s/web/w/extensions/SemanticMediaWiki/phpunit.xml.dist
+
+.............................................................   61 / 3021 (  2%)
+.............................................................  122 / 3021 (  4%)
+.............................................................  183 / 3021 (  6%)
+.............................................................  244 / 3021 (  8%)
+.............................................................  305 / 3021 ( 10%)
+.............................................................  366 / 3021 ( 12%)
+.............................................................  427 / 3021 ( 14%)
+.............................................................  488 / 3021 ( 16%)
+.............................................................  549 / 3021 ( 18%)
+....................E........................................  610 / 3021 ( 20%)
+...EEEEEEE.EE.E...E.....................EE...................  671 / 3021 ( 22%)
+.............................................................  732 / 3021 ( 24%)
+.............................................................  793 / 3021 ( 26%)
+.............................................................  854 / 3021 ( 28%)
+.............................................................  915 / 3021 ( 30%)
+....................E.EEE....................................  976 / 3021 ( 32%)
+............................................................. 1037 / 3021 ( 34%)
+............................................................. 1098 / 3021 ( 36%)
+.........E................................................... 1159 / 3021 ( 38%)
+............................................................. 1220 / 3021 ( 40%)
+............................................................. 1281 / 3021 ( 42%)
+............................................................. 1342 / 3021 ( 44%)
+............................................................. 1403 / 3021 ( 46%)
+............................................................. 1464 / 3021 ( 48%)
+............................................................. 1525 / 3021 ( 50%)
+............................................................. 1586 / 3021 ( 52%)
+............................................................. 1647 / 3021 ( 54%)
+............................................................. 1708 / 3021 ( 56%)
+............................................................. 1769 / 3021 ( 58%)
+............................................................. 1830 / 3021 ( 60%)
+............................................................. 1891 / 3021 ( 62%)
+............................................................. 1952 / 3021 ( 64%)
+............................................................. 2013 / 3021 ( 66%)
+............................................................. 2074 / 3021 ( 68%)
+............EEEEEE..EEEEEEEE...EEEEEEE....................... 2135 / 3021 ( 70%)
+................EEE.EEE...................................... 2196 / 3021 ( 72%)
+............................................................. 2257 / 3021 ( 74%)
+...............EEEEEEEEEEEEEEE............................... 2318 / 3021 ( 76%)
+.......EE.................................................... 2379 / 3021 ( 78%)
+............................................................. 2440 / 3021 ( 80%)
+............................................................. 2501 / 3021 ( 82%)
+..........................EESE..EE.............S.........E... 2562 / 3021 ( 84%)
+..............ES...EE.ESESESSSE..SE..SEEEE...........E..EE... 2623 / 3021 ( 86%)
+.....E....EE........E...E.EE.EEE.EEEEEE.........ESSSSSSS..... 2684 / 3021 ( 88%)
+............................E.
+SMW\Tests\Integration\MediaWiki\Import\Maintenance\DumpRdfMaintenanceTest testMaintenanceRdfOutput ran for 10.853 seconds
+EE
+SMW\Tests\Integration\MediaWiki\Import\Maintenance\RebuildDataMaintenanceTest testRebuildData ran for 25.086 seconds
+..EE.E....................... 2745 / 3021 ( 90%)
+............................................................. 2806 / 3021 ( 92%)
+............................................................. 2867 / 3021 ( 94%)
+............................................................. 2928 / 3021 ( 96%)
+............SSS.............................................. 2989 / 3021 ( 98%)
+................................
+
+Time: 4.57 minutes, Memory: 192.50Mb
+
+There were 107 errors:
+
+1) SMW\Tests\Maintenance\DataRebuilderTest::testRebuildSelectedPagesWithQueryOption
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/src/Maintenance/DataRebuilder.php:325
+/home/s/web/w/extensions/SemanticMediaWiki/src/Maintenance/DataRebuilder.php:169
+/home/s/web/w/extensions/SemanticMediaWiki/src/Maintenance/DataRebuilder.php:148
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/Maintenance/DataRebuilderTest.php:192
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+2) SMW\Tests\MediaWiki\Api\AskArgsTest::testExecuteOnStore with data set #0 (array('[[Modification date::+]]', null, null), array(true))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/Query.php:41
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/AskArgs.php:29
+/home/s/web/w/includes/api/ApiMain.php:1098
+/home/s/web/w/includes/api/ApiMain.php:407
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/MwApiFactory.php:54
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Api/AskArgsTest.php:64
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+3) SMW\Tests\MediaWiki\Api\AskArgsTest::testExecuteOnStore with data set #1 (array('[[Modification date::+]]', null, 'limit=10'), array(true))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/Query.php:41
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/AskArgs.php:29
+/home/s/web/w/includes/api/ApiMain.php:1098
+/home/s/web/w/includes/api/ApiMain.php:407
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/MwApiFactory.php:54
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Api/AskArgsTest.php:64
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+4) SMW\Tests\MediaWiki\Api\AskArgsTest::testExecuteOnStore with data set #2 (array('[[Modification date::+]]', 'Modification date', 'limit=10'), array(true))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/Query.php:41
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/AskArgs.php:29
+/home/s/web/w/includes/api/ApiMain.php:1098
+/home/s/web/w/includes/api/ApiMain.php:407
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/MwApiFactory.php:54
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Api/AskArgsTest.php:64
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+5) SMW\Tests\MediaWiki\Api\AskArgsTest::testExecuteOnStore with data set #3 (array('Modification date::+', null, null), array(array('', '_wpg', 2, false)))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/Query.php:41
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/AskArgs.php:29
+/home/s/web/w/includes/api/ApiMain.php:1098
+/home/s/web/w/includes/api/ApiMain.php:407
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/MwApiFactory.php:54
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Api/AskArgsTest.php:64
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+6) SMW\Tests\MediaWiki\Api\AskArgsTest::testExecuteOnStore with data set #4 (array('Modification date::+', 'Modification date', null), array(array('', '_wpg', 2, false), array('Modification date', '_dat', 1, '')))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/Query.php:41
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/AskArgs.php:29
+/home/s/web/w/includes/api/ApiMain.php:1098
+/home/s/web/w/includes/api/ApiMain.php:407
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/MwApiFactory.php:54
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Api/AskArgsTest.php:64
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+7) SMW\Tests\MediaWiki\Api\AskArgsTest::testExecuteOnStore with data set #5 (array('Modification date::+', 'Modification date', 'limit=1'), array(array('', '_wpg', 2, false), array('Modification date', '_dat', 1, '')))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/Query.php:41
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/AskArgs.php:29
+/home/s/web/w/includes/api/ApiMain.php:1098
+/home/s/web/w/includes/api/ApiMain.php:407
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/MwApiFactory.php:54
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Api/AskArgsTest.php:64
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+8) SMW\Tests\MediaWiki\Api\AskArgsTest::testExecuteOnMockStore
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/Query.php:41
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/AskArgs.php:29
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Api/AskArgsTest.php:114
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+9) SMW\Tests\MediaWiki\Api\AskTest::testExecute with data set #0 (array('[[Modification date::+]]', '?Modification date', 'limit=10'), array(array('', '_wpg', 2, false), array('Modification date', '_dat', 1, '')))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/Query.php:41
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/Ask.php:34
+/home/s/web/w/includes/api/ApiMain.php:1098
+/home/s/web/w/includes/api/ApiMain.php:407
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/MwApiFactory.php:54
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Api/AskTest.php:52
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+10) SMW\Tests\MediaWiki\Api\AskTest::testExecute with data set #1 (array('[[Modification date::+!]]', 'limit=3'), array(array('foo')))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/Query.php:41
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/Ask.php:34
+/home/s/web/w/includes/api/ApiMain.php:1098
+/home/s/web/w/includes/api/ApiMain.php:407
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/MwApiFactory.php:54
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Api/AskTest.php:52
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+11) SMW\Tests\MediaWiki\Api\BrowseBySubjectTest::testExecuteForValidSubject
+Use of ApiBase::getResultData was deprecated in MediaWiki 1.25. [Called from SMW\Tests\Utils\MwApiFactory::doApiRequest in /home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/MwApiFactory.php at line 56]
+
+/home/s/web/w/includes/debug/MWDebug.php:300
+/home/s/web/w/includes/debug/MWDebug.php:233
+/home/s/web/w/includes/GlobalFunctions.php:1187
+/home/s/web/w/includes/api/ApiBase.php:2740
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/MwApiFactory.php:56
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Api/BrowseBySubjectTest.php:88
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+12) SMW\Tests\MediaWiki\Api\InfoTest::testExecuteOnStore with data set #0 ('proppagecount', 'integer')
+Use of ApiResult::getData was deprecated in MediaWiki 1.25. [Called from ApiBase::getResultData in /home/s/web/w/includes/api/ApiBase.php at line 2741]
+
+/home/s/web/w/includes/debug/MWDebug.php:300
+/home/s/web/w/includes/debug/MWDebug.php:233
+/home/s/web/w/includes/GlobalFunctions.php:1187
+/home/s/web/w/includes/api/ApiResult.php:1136
+/home/s/web/w/includes/api/ApiBase.php:2741
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/MwApiFactory.php:56
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Api/InfoTest.php:62
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+13) SMW\Tests\MediaWiki\Api\QueryTest::testQueryAndQueryResult
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/Query.php:41
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Api/QueryTest.php:63
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+14) SMW\Tests\MediaWiki\Api\QueryTest::testAddQueryResultOnMockStore
+Use of ApiMain to ApiResult::__construct was deprecated in MediaWiki 1.25. [Called from SMW\Tests\Utils\MwApiFactory::newApiResult in /home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/MwApiFactory.php at line 38]
+
+/home/s/web/w/includes/debug/MWDebug.php:300
+/home/s/web/w/includes/debug/MWDebug.php:233
+/home/s/web/w/includes/GlobalFunctions.php:1187
+/home/s/web/w/includes/api/ApiResult.php:143
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/MwApiFactory.php:38
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Api/QueryTest.php:109
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+15) SMW\Tests\MediaWiki\Search\SearchTest::testSearchTitle_withNonsemanticQuery
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Search/Search.php:105
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Search/Search.php:146
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Search/SearchTest.php:134
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+16) SMW\Tests\MediaWiki\Search\SearchTest::testSearchTitle_withSemanticQuery
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Search/Search.php:105
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Search/Search.php:146
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Search/SearchTest.php:192
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+17) SMW\Tests\MediaWiki\Search\SearchTest::testSearchText_withNonsemanticQuery
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Search/Search.php:105
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Search/Search.php:188
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Search/SearchTest.php:234
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+18) SMW\Tests\MediaWiki\Search\SearchTest::testSearchText_withSemanticQuery
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Search/Search.php:105
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Search/Search.php:188
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Search/SearchTest.php:244
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+19) SMW\Test\SMWQueryProcessorTest::testCreateQuery with data set #0 ('[[Modification date::+]]|?Mod...r=desc')
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/Query/QueryProcessorTest.php:44
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+20) SMW\Test\AskParserFunctionTest::testParse with data set #0 (array('[[Modification date::+]]', '?Modification date', 'format=list'), array(4, array('_ASKST', '_ASKSI', '_ASKDE', '_ASKFO'), array('list', 1, 1, '[[Modification date::+]]')), array(false))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/AskParserFunctionTest.php:98
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+21) SMW\Test\AskParserFunctionTest::testParse with data set #1 (array('[[Modification date::+]] [[Ca... bar]]', '?Modification date', '?Has title', 'format=list'), array(4, array('_ASKST', '_ASKSI', '_ASKDE', '_ASKFO'), array('list', 4, 1, '[[Modification date::+]] [[Ca... bar]]')), array(false))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/AskParserFunctionTest.php:98
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+22) SMW\Test\AskParserFunctionTest::testParse with data set #2 (array('[[Modification date::+]][[Cat...:Foo]]', '?Modification date', '?Has title', 'format=list'), array(4, array('_ASKST', '_ASKSI', '_ASKDE', '_ASKFO'), array('list', 2, 1, '[[Modification date::+]] [[Ca...:Foo]]')), array(false))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/AskParserFunctionTest.php:98
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+23) SMW\Test\AskParserFunctionTest::testParse with data set #3 (array('[[File:Fooo]]', '?Modification date', 'default=no results', 'format=feed'), array(4, array('_ASKST', '_ASKSI', '_ASKDE', '_ASKFO'), array('feed', 1, 1, '[[:File:Fooo]]')), array(false))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/AskParserFunctionTest.php:98
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+24) SMW\Test\AskParserFunctionTest::testParse with data set #4 (array('[[Modification date::+]][[Cat...:Foo]]', '?Modification date', '?Has title', 'format=lula'), array(4, array('_ASKST', '_ASKSI', '_ASKDE', '_ASKFO'), array('table', 2, 1, '[[Modification date::+]] [[Ca...:Foo]]')), array(false))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/AskParserFunctionTest.php:98
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+25) SMW\Test\AskParserFunctionTest::testParse with data set #5 (array('[[Modification date::+]][[Cat...:Foo]]', '?Modification date', '?Has title', 'format=lula'), array(5, array('_ASKST', '_ASKSI', '_ASKDE', '_ASKFO', '_ASKDU')), array(true))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/AskParserFunctionTest.php:98
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+26) SMW\Test\AskParserFunctionTest::testCircularGuard
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/AskParserFunctionTest.php:196
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+27) SMW\Test\AskParserFunctionTest::testQueryIdStabilityForFixedSetOfParameters
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/AskParserFunctionTest.php:227
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+28) SMW\Test\AskParserFunctionTest::testInstantiatedQueryData with data set #0 (array('[[Modification date::+]]', '?Modification date', 'format=list'), array(4, array('_ASKST', '_ASKSI', '_ASKDE', '_ASKFO'), array('list', 1, 1, '[[Modification date::+]]')), array(false))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/AskParserFunctionTest.php:278
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+29) SMW\Test\AskParserFunctionTest::testInstantiatedQueryData with data set #1 (array('[[Modification date::+]] [[Ca... bar]]', '?Modification date', '?Has title', 'format=list'), array(4, array('_ASKST', '_ASKSI', '_ASKDE', '_ASKFO'), array('list', 4, 1, '[[Modification date::+]] [[Ca... bar]]')), array(false))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/AskParserFunctionTest.php:278
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+30) SMW\Test\AskParserFunctionTest::testInstantiatedQueryData with data set #2 (array('[[Modification date::+]][[Cat...:Foo]]', '?Modification date', '?Has title', 'format=list'), array(4, array('_ASKST', '_ASKSI', '_ASKDE', '_ASKFO'), array('list', 2, 1, '[[Modification date::+]] [[Ca...:Foo]]')), array(false))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/AskParserFunctionTest.php:278
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+31) SMW\Test\AskParserFunctionTest::testInstantiatedQueryData with data set #3 (array('[[File:Fooo]]', '?Modification date', 'default=no results', 'format=feed'), array(4, array('_ASKST', '_ASKSI', '_ASKDE', '_ASKFO'), array('feed', 1, 1, '[[:File:Fooo]]')), array(false))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/AskParserFunctionTest.php:278
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+32) SMW\Test\AskParserFunctionTest::testInstantiatedQueryData with data set #4 (array('[[Modification date::+]][[Cat...:Foo]]', '?Modification date', '?Has title', 'format=lula'), array(4, array('_ASKST', '_ASKSI', '_ASKDE', '_ASKFO'), array('table', 2, 1, '[[Modification date::+]] [[Ca...:Foo]]')), array(false))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/AskParserFunctionTest.php:278
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+33) SMW\Test\AskParserFunctionTest::testInstantiatedQueryData with data set #5 (array('[[Modification date::+]][[Cat...:Foo]]', '?Modification date', '?Has title', 'format=lula'), array(5, array('_ASKST', '_ASKSI', '_ASKDE', '_ASKFO', '_ASKDU')), array(true))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/AskParserFunctionTest.php:278
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+34) SMW\Tests\ConceptParserFunctionTest::testErrorForOnDoubleParse with data set #0 (array('[[Modification date::+]]'), array(true, 1, '[[Modification date::+]]', '', 1, 1))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ConceptParserFunction.php:133
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ConceptParserFunction.php:78
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/ConceptParserFunctionTest.php:106
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+35) SMW\Tests\ConceptParserFunctionTest::testErrorForOnDoubleParse with data set #1 (array('[[Modification date::+]]', 'Foooooooo'), array(true, 1, '[[Modification date::+]]', 'Foooooooo', 1, 1))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ConceptParserFunction.php:133
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ConceptParserFunction.php:78
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/ConceptParserFunctionTest.php:106
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+36) SMW\Tests\ConceptParserFunctionTest::testErrorForOnDoubleParse with data set #2 (array(Parser Object (...), '[[Modification date::+]]', 'Foooooooo'), array(true, 1, '[[Modification date::+]]', 'Foooooooo', 1, 1))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ConceptParserFunction.php:133
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ConceptParserFunction.php:78
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/ConceptParserFunctionTest.php:106
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+37) SMW\Tests\ConceptParserFunctionTest::testExistForFoundMessageFormatterEntry
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ConceptParserFunction.php:133
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ConceptParserFunction.php:78
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/ConceptParserFunctionTest.php:137
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+38) SMW\Tests\ConceptParserFunctionTest::testParse with data set #0 (array('[[Modification date::+]]'), array(true, 1, '[[Modification date::+]]', '', 1, 1))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ConceptParserFunction.php:133
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ConceptParserFunction.php:78
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/ConceptParserFunctionTest.php:160
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+39) SMW\Tests\ConceptParserFunctionTest::testParse with data set #1 (array('[[Modification date::+]]', 'Foooooooo'), array(true, 1, '[[Modification date::+]]', 'Foooooooo', 1, 1))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ConceptParserFunction.php:133
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ConceptParserFunction.php:78
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/ConceptParserFunctionTest.php:160
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+40) SMW\Tests\ConceptParserFunctionTest::testParse with data set #2 (array(Parser Object (...), '[[Modification date::+]]', 'Foooooooo'), array(true, 1, '[[Modification date::+]]', 'Foooooooo', 1, 1))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ConceptParserFunction.php:133
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ConceptParserFunction.php:78
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/ConceptParserFunctionTest.php:160
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+41) SMW\Test\ShowParserFunctionTest::testParse with data set #0 (array('Foo-show', '?Modification date'), array('', 4, array('_ASKFO', '_ASKDE', '_ASKSI', '_ASKST'), array('list', 0, 1, '[[:Foo]]')))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ShowParserFunction.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/ShowParserFunctionTest.php:88
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+42) SMW\Test\ShowParserFunctionTest::testParse with data set #1 (array('Help:Bar', '?Modification date', 'default=no results'), array('no results', 4, array('_ASKFO', '_ASKDE', '_ASKSI', '_ASKST'), array('list', 0, 1, '[[:Help:Bar]]')))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ShowParserFunction.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/ShowParserFunctionTest.php:88
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+43) SMW\Test\ShowParserFunctionTest::testParse with data set #2 (array('[[File:Fooo]]', '?Modification date', 'default=no results', 'format=table'), array('class="smwtticon warning"', 4, array('_ASKFO', '_ASKDE', '_ASKSI', '_ASKST'), array('table', 0, 1, '[[:]]')))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ShowParserFunction.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/ShowParserFunctionTest.php:88
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+44) SMW\Test\ShowParserFunctionTest::testInstantiatedQueryData with data set #0 (array('Foo-show', '?Modification date'), array('', 4, array('_ASKFO', '_ASKDE', '_ASKSI', '_ASKST'), array('list', 0, 1, '[[:Foo]]')))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ShowParserFunction.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/ShowParserFunctionTest.php:151
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+45) SMW\Test\ShowParserFunctionTest::testInstantiatedQueryData with data set #1 (array('Help:Bar', '?Modification date', 'default=no results'), array('no results', 4, array('_ASKFO', '_ASKDE', '_ASKSI', '_ASKST'), array('list', 0, 1, '[[:Help:Bar]]')))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ShowParserFunction.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/ShowParserFunctionTest.php:151
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+46) SMW\Test\ShowParserFunctionTest::testInstantiatedQueryData with data set #2 (array('[[File:Fooo]]', '?Modification date', 'default=no results', 'format=table'), array('class="smwtticon warning"', 4, array('_ASKFO', '_ASKDE', '_ASKSI', '_ASKST'), array('table', 0, 1, '[[:]]')))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ShowParserFunction.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/parserhooks/ShowParserFunctionTest.php:151
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+47) SMW\Test\ResultPrintersTest::testGetParamDefinitions with data set #0 (SMW\TableResultPrinter Object (...))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/queryprinters/ResultPrintersTest.php:81
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+48) SMW\Test\ResultPrintersTest::testGetParamDefinitions with data set #1 (SMW\ListResultPrinter Object (...))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/queryprinters/ResultPrintersTest.php:81
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+49) SMW\Test\ResultPrintersTest::testGetParamDefinitions with data set #2 (SMW\ListResultPrinter Object (...))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/queryprinters/ResultPrintersTest.php:81
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+50) SMW\Test\ResultPrintersTest::testGetParamDefinitions with data set #3 (SMW\ListResultPrinter Object (...))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/queryprinters/ResultPrintersTest.php:81
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+51) SMW\Test\ResultPrintersTest::testGetParamDefinitions with data set #4 (SMW\TableResultPrinter Object (...))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/queryprinters/ResultPrintersTest.php:81
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+52) SMW\Test\ResultPrintersTest::testGetParamDefinitions with data set #5 (SMW\CategoryResultPrinter Object (...))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/queryprinters/ResultPrintersTest.php:81
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+53) SMW\Test\ResultPrintersTest::testGetParamDefinitions with data set #6 (SMW\EmbeddedResultPrinter Object (...))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/queryprinters/ResultPrintersTest.php:81
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+54) SMW\Test\ResultPrintersTest::testGetParamDefinitions with data set #7 (SMW\ListResultPrinter Object (...))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/queryprinters/ResultPrintersTest.php:81
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+55) SMW\Test\ResultPrintersTest::testGetParamDefinitions with data set #8 (SMW\ListResultPrinter Object (...))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/queryprinters/ResultPrintersTest.php:81
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+56) SMW\Test\ResultPrintersTest::testGetParamDefinitions with data set #9 (SMW\ListResultPrinter Object (...))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/queryprinters/ResultPrintersTest.php:81
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+57) SMW\Test\ResultPrintersTest::testGetParamDefinitions with data set #10 (SMW\FeedResultPrinter Object (...))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/queryprinters/ResultPrintersTest.php:81
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+58) SMW\Test\ResultPrintersTest::testGetParamDefinitions with data set #11 (SMW\CsvResultPrinter Object (...))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/queryprinters/ResultPrintersTest.php:81
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+59) SMW\Test\ResultPrintersTest::testGetParamDefinitions with data set #12 (SMW\DsvResultPrinter Object (...))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/queryprinters/ResultPrintersTest.php:81
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+60) SMW\Test\ResultPrintersTest::testGetParamDefinitions with data set #13 (SMW\JsonResultPrinter Object (...))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/queryprinters/ResultPrintersTest.php:81
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+61) SMW\Test\ResultPrintersTest::testGetParamDefinitions with data set #14 (SMW\RdfResultPrinter Object (...))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/queryprinters/ResultPrintersTest.php:81
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+62) SMW\Test\SpecialsTest::testSpecial with data set #0 (SMWAskPage Object (...))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:701
+/home/s/web/w/extensions/SemanticMediaWiki/includes/specials/SMW_QuerySpecialPage.php:33
+/home/s/web/w/extensions/SemanticMediaWiki/includes/specials/SMW_SpecialAsk.php:391
+/home/s/web/w/extensions/SemanticMediaWiki/includes/specials/SMW_SpecialAsk.php:336
+/home/s/web/w/extensions/SemanticMediaWiki/includes/specials/SMW_SpecialAsk.php:59
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/specials/SpecialsTest.php:60
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+63) SMW\Test\SpecialsTest::testSpecial with data set #1 (SMWAskPage Object (...))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:701
+/home/s/web/w/extensions/SemanticMediaWiki/includes/specials/SMW_QuerySpecialPage.php:33
+/home/s/web/w/extensions/SemanticMediaWiki/includes/specials/SMW_SpecialAsk.php:391
+/home/s/web/w/extensions/SemanticMediaWiki/includes/specials/SMW_SpecialAsk.php:336
+/home/s/web/w/extensions/SemanticMediaWiki/includes/specials/SMW_SpecialAsk.php:59
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/specials/SpecialsTest.php:60
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+64) SMW\Tests\Integration\MediaWiki\AskParserFunctionDBIntegrationTest::testAskToCreatePropertyAnnotationFromTranscludedTemplate
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php:103
+/home/s/web/w/includes/parser/Parser.php:3771
+/home/s/web/w/includes/parser/Parser.php:3505
+/home/s/web/w/includes/parser/Preprocessor_DOM.php:1169
+/home/s/web/w/includes/parser/Parser.php:3322
+/home/s/web/w/includes/parser/Parser.php:1231
+/home/s/web/w/includes/parser/Parser.php:434
+/home/s/web/w/includes/content/WikitextContent.php:333
+/home/s/web/w/includes/content/AbstractContent.php:497
+/home/s/web/w/includes/page/WikiPage.php:2131
+/home/s/web/w/includes/page/WikiPage.php:1757
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/PageCreator.php:64
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/AskParserFunctionDBIntegrationTest.php:54
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+65) SMW\Tests\Integration\MediaWiki\Hooks\FileUploadIntegrationTest::testFileUploadForDummyTextFile
+fopen(/home/s/web/w/images/lockdir/lzil6qvknd1r4uvzu27n91vgcf5srbl.lock): failed to open stream: Permission denied
+
+/home/s/web/w/includes/filebackend/lockmanager/FSLockManager.php:125
+/home/s/web/w/includes/filebackend/lockmanager/FSLockManager.php:72
+/home/s/web/w/includes/filebackend/lockmanager/LockManager.php:198
+/home/s/web/w/includes/filebackend/lockmanager/LockManager.php:110
+/home/s/web/w/includes/filebackend/lockmanager/LockManager.php:93
+/home/s/web/w/includes/filebackend/FileBackend.php:1235
+/home/s/web/w/includes/filerepo/file/LocalFile.php:1854
+/home/s/web/w/includes/filerepo/file/LocalFile.php:1148
+/home/s/web/w/includes/upload/UploadBase.php:715
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/File/LocalFileUpload.php:86
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Hooks/FileUploadIntegrationTest.php:111
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+66) SMW\Tests\Integration\MediaWiki\Hooks\FileUploadIntegrationTest::testDummyTextFileUploadForDisabledNamespace
+fopen(/home/s/web/w/images/lockdir/scg2qat6qygwkefg37bbisge8uvzibl.lock): failed to open stream: Permission denied
+
+/home/s/web/w/includes/filebackend/lockmanager/FSLockManager.php:125
+/home/s/web/w/includes/filebackend/lockmanager/FSLockManager.php:72
+/home/s/web/w/includes/filebackend/lockmanager/LockManager.php:198
+/home/s/web/w/includes/filebackend/lockmanager/LockManager.php:110
+/home/s/web/w/includes/filebackend/lockmanager/LockManager.php:93
+/home/s/web/w/includes/filebackend/FileBackend.php:1235
+/home/s/web/w/includes/filerepo/file/LocalFile.php:1854
+/home/s/web/w/includes/filerepo/file/LocalFile.php:1148
+/home/s/web/w/includes/upload/UploadBase.php:715
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/File/LocalFileUpload.php:86
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Hooks/FileUploadIntegrationTest.php:164
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+67) SMW\Tests\Integration\MediaWiki\Hooks\ParserFirstCallInitIntegrationTest::testParseWithParserFunctionEnabled with data set #0 ('ask', '{{#ask: [[Modification date::...it=1}}')
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php:103
+/home/s/web/w/includes/parser/Parser.php:3771
+/home/s/web/w/includes/parser/Parser.php:3505
+/home/s/web/w/includes/parser/Preprocessor_DOM.php:1169
+/home/s/web/w/includes/parser/Parser.php:3322
+/home/s/web/w/includes/parser/Parser.php:1231
+/home/s/web/w/includes/parser/Parser.php:434
+/home/s/web/w/extensions/SemanticMediaWiki/includes/ContentParser.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/includes/ContentParser.php:122
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Hooks/ParserFirstCallInitIntegrationTest.php:80
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+68) SMW\Tests\Integration\MediaWiki\Hooks\ParserFirstCallInitIntegrationTest::testParseWithParserFunctionEnabled with data set #1 ('show', '{{#show: [[Foo]]|limit=1}}')
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ShowParserFunction.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php:120
+/home/s/web/w/includes/parser/Parser.php:3771
+/home/s/web/w/includes/parser/Parser.php:3505
+/home/s/web/w/includes/parser/Preprocessor_DOM.php:1169
+/home/s/web/w/includes/parser/Parser.php:3322
+/home/s/web/w/includes/parser/Parser.php:1231
+/home/s/web/w/includes/parser/Parser.php:434
+/home/s/web/w/extensions/SemanticMediaWiki/includes/ContentParser.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/includes/ContentParser.php:122
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Hooks/ParserFirstCallInitIntegrationTest.php:80
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+69) SMW\Tests\Integration\MediaWiki\JobQueueDBIntegrationTest::testNoInfiniteUpdateJobsForCircularRedirect
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php:103
+/home/s/web/w/includes/parser/Parser.php:3771
+/home/s/web/w/includes/parser/Parser.php:3505
+/home/s/web/w/includes/parser/Preprocessor_DOM.php:1169
+/home/s/web/w/includes/parser/Parser.php:3322
+/home/s/web/w/includes/parser/Parser.php:1231
+/home/s/web/w/includes/parser/Parser.php:434
+/home/s/web/w/includes/content/WikitextContent.php:333
+/home/s/web/w/includes/content/AbstractContent.php:497
+/home/s/web/w/includes/page/WikiPage.php:2131
+/home/s/web/w/includes/page/WikiPage.php:1757
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/PageCreator.php:64
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/JobQueueDBIntegrationTest.php:247
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+70) SMW\Tests\Integration\MediaWiki\SearchInPageDBIntegrationTest::testSearchForPageValueAsTerm
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Search/Search.php:105
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Search/Search.php:146
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/SearchInPageDBIntegrationTest.php:45
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+71) SMW\Tests\Integration\Parser\ByJsonParserTestCaseRunnerTest::executeTestCasesFor with data set "parser-005-template-invert-annotation.json" ('/home/s/web/w/extensions/Sema...n.json')
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php:103
+/home/s/web/w/includes/parser/Parser.php:3771
+/home/s/web/w/includes/parser/Parser.php:3505
+/home/s/web/w/includes/parser/Preprocessor_DOM.php:1169
+/home/s/web/w/includes/parser/Parser.php:3647
+/home/s/web/w/includes/parser/Preprocessor_DOM.php:1169
+/home/s/web/w/includes/parser/Parser.php:3322
+/home/s/web/w/includes/parser/Parser.php:1231
+/home/s/web/w/includes/parser/Parser.php:434
+/home/s/web/w/includes/content/WikitextContent.php:333
+/home/s/web/w/includes/content/AbstractContent.php:497
+/home/s/web/w/includes/page/WikiPage.php:2131
+/home/s/web/w/includes/page/WikiPage.php:1757
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/PageCreator.php:64
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:113
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Parser/ByJsonParserTestCaseRunnerTest.php:78
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+72) SMW\Tests\Integration\Parser\ByJsonParserTestCaseRunnerTest::executeTestCasesFor with data set "parser-002-set-template-use.json" ('/home/s/web/w/extensions/Sema...e.json')
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php:103
+/home/s/web/w/includes/parser/Parser.php:3771
+/home/s/web/w/includes/parser/Parser.php:3505
+/home/s/web/w/includes/parser/Preprocessor_DOM.php:1169
+/home/s/web/w/includes/parser/Parser.php:3647
+/home/s/web/w/includes/parser/Preprocessor_DOM.php:1169
+/home/s/web/w/includes/parser/Parser.php:3322
+/home/s/web/w/includes/parser/Parser.php:1231
+/home/s/web/w/includes/parser/Parser.php:589
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Renderer/HtmlTemplateRenderer.php:68
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/SetParserFunction.php:101
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php:162
+/home/s/web/w/includes/parser/Parser.php:3771
+/home/s/web/w/includes/parser/Parser.php:3505
+/home/s/web/w/includes/parser/Preprocessor_DOM.php:1169
+/home/s/web/w/includes/parser/Parser.php:3322
+/home/s/web/w/includes/parser/Parser.php:1231
+/home/s/web/w/includes/parser/Parser.php:434
+/home/s/web/w/includes/content/WikitextContent.php:333
+/home/s/web/w/includes/content/AbstractContent.php:497
+/home/s/web/w/includes/page/WikiPage.php:2131
+/home/s/web/w/includes/page/WikiPage.php:1757
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/PageCreator.php:64
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:113
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Parser/ByJsonParserTestCaseRunnerTest.php:78
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+73) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "format-01-03-template-self-reference.json" ('/home/s/web/w/extensions/Sema...e.json')
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php:103
+/home/s/web/w/includes/parser/Parser.php:3771
+/home/s/web/w/includes/parser/Parser.php:3505
+/home/s/web/w/includes/parser/Preprocessor_DOM.php:1169
+/home/s/web/w/includes/parser/Parser.php:3322
+/home/s/web/w/includes/parser/Parser.php:1231
+/home/s/web/w/includes/parser/Parser.php:434
+/home/s/web/w/includes/content/WikitextContent.php:333
+/home/s/web/w/includes/content/AbstractContent.php:497
+/home/s/web/w/includes/page/WikiPage.php:2131
+/home/s/web/w/includes/page/WikiPage.php:1757
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/PageCreator.php:64
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:113
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:87
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+74) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "format-03-02-category-defaultsort-en.json" ('/home/s/web/w/extensions/Sema...n.json')
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php:103
+/home/s/web/w/includes/parser/Parser.php:3771
+/home/s/web/w/includes/parser/Parser.php:3505
+/home/s/web/w/includes/parser/Preprocessor_DOM.php:1169
+/home/s/web/w/includes/parser/Parser.php:3322
+/home/s/web/w/includes/parser/Parser.php:1231
+/home/s/web/w/includes/parser/Parser.php:434
+/home/s/web/w/includes/content/WikitextContent.php:333
+/home/s/web/w/includes/content/AbstractContent.php:497
+/home/s/web/w/includes/page/WikiPage.php:2131
+/home/s/web/w/includes/page/WikiPage.php:1757
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/PageCreator.php:64
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:113
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:87
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+75) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "query-01-01-blob.json" ('/home/s/web/w/extensions/Sema...b.json')
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/includes/db/Database.php:1726
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:179
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:302
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:262
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:224
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/QueryTestCaseProcessor.php:95
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:94
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+76) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "query-06-03-page-set-intext-parser.json" ('/home/s/web/w/extensions/Sema...r.json')
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/includes/db/Database.php:1726
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:179
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:302
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:262
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:224
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/QueryTestCaseProcessor.php:95
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:94
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+77) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "format-01-01-template.json" ('/home/s/web/w/extensions/Sema...e.json')
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php:103
+/home/s/web/w/includes/parser/Parser.php:3771
+/home/s/web/w/includes/parser/Parser.php:3505
+/home/s/web/w/includes/parser/Preprocessor_DOM.php:1169
+/home/s/web/w/includes/parser/Parser.php:3322
+/home/s/web/w/includes/parser/Parser.php:1231
+/home/s/web/w/includes/parser/Parser.php:434
+/home/s/web/w/includes/content/WikitextContent.php:333
+/home/s/web/w/includes/content/AbstractContent.php:497
+/home/s/web/w/includes/page/WikiPage.php:2131
+/home/s/web/w/includes/page/WikiPage.php:1757
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/PageCreator.php:64
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:113
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:87
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+78) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "query-04-01-subproperty.json" ('/home/s/web/w/extensions/Sema...y.json')
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:242
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:354
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:335
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:262
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/QueryTestCaseProcessor.php:95
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:94
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+79) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "format-02-02-table-output-en.json" ('/home/s/web/w/extensions/Sema...n.json')
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php:103
+/home/s/web/w/includes/parser/Parser.php:3771
+/home/s/web/w/includes/parser/Parser.php:3505
+/home/s/web/w/includes/parser/Preprocessor_DOM.php:1169
+/home/s/web/w/includes/parser/Parser.php:3322
+/home/s/web/w/includes/parser/Parser.php:1231
+/home/s/web/w/includes/parser/Parser.php:434
+/home/s/web/w/includes/content/WikitextContent.php:333
+/home/s/web/w/includes/content/AbstractContent.php:497
+/home/s/web/w/includes/page/WikiPage.php:2131
+/home/s/web/w/includes/page/WikiPage.php:1757
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/PageCreator.php:64
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:113
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:87
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+80) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "query-03-01-import-foaf.json" ('/home/s/web/w/extensions/Sema...f.json')
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/includes/db/Database.php:1726
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:179
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:302
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:262
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:224
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/QueryTestCaseProcessor.php:95
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:94
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+81) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "format-02-01-table-boolean-query.json" ('/home/s/web/w/extensions/Sema...y.json')
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php:103
+/home/s/web/w/includes/parser/Parser.php:3771
+/home/s/web/w/includes/parser/Parser.php:3505
+/home/s/web/w/includes/parser/Preprocessor_DOM.php:1169
+/home/s/web/w/includes/parser/Parser.php:3322
+/home/s/web/w/includes/parser/Parser.php:1231
+/home/s/web/w/includes/parser/Parser.php:434
+/home/s/web/w/includes/content/WikitextContent.php:333
+/home/s/web/w/includes/content/AbstractContent.php:497
+/home/s/web/w/includes/page/WikiPage.php:2131
+/home/s/web/w/includes/page/WikiPage.php:1757
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/PageCreator.php:64
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:113
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:87
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+82) SMW\Tests\Integration\Query\ConjunctionQueryDBIntegrationTest::testNestedPropertyConjunction
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:242
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:354
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:335
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:262
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:197
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ConjunctionQueryDBIntegrationTest.php:241
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+83) SMW\Tests\Integration\Query\DisjunctionQueryDBIntegrationTest::testDisjunctionSubqueryForPageTypePropertyChainThatComparesEqualToValue
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/includes/db/Database.php:1726
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:179
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:302
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:262
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:224
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/DisjunctionQueryDBIntegrationTest.php:155
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+84) SMW\Tests\Integration\Query\DisjunctionQueryDBIntegrationTest::testSubqueryDisjunction
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:242
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:250
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/DisjunctionQueryDBIntegrationTest.php:234
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+85) SMW\Tests\Integration\Query\PageTypeRegexQueryTest::testPageLikeNotLikeWildcardSearch
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/includes/db/Database.php:1726
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:179
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:302
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:262
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:224
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/PageTypeRegexQueryTest.php:192
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/PageTypeRegexQueryTest.php:169
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+86) SMW\Tests\Integration\Query\ResultPrinter\QueryResultPrinterIntegrationTest::testLimitNullWithEmptySearchlabel
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php:103
+/home/s/web/w/includes/parser/Parser.php:3771
+/home/s/web/w/includes/parser/Parser.php:3505
+/home/s/web/w/includes/parser/Preprocessor_DOM.php:1169
+/home/s/web/w/includes/parser/Parser.php:3322
+/home/s/web/w/includes/parser/Parser.php:1231
+/home/s/web/w/includes/parser/Parser.php:434
+/home/s/web/w/includes/content/WikitextContent.php:333
+/home/s/web/w/includes/content/AbstractContent.php:497
+/home/s/web/w/includes/page/WikiPage.php:2131
+/home/s/web/w/includes/page/WikiPage.php:1757
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/PageCreator.php:64
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ResultPrinter/QueryResultPrinterIntegrationTest.php:66
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+87) SMW\Tests\Integration\Query\ResultPrinter\QueryResultPrinterIntegrationTest::testLimitNullWithDescriptiveSearchlabel
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:136
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php:103
+/home/s/web/w/includes/parser/Parser.php:3771
+/home/s/web/w/includes/parser/Parser.php:3505
+/home/s/web/w/includes/parser/Preprocessor_DOM.php:1169
+/home/s/web/w/includes/parser/Parser.php:3322
+/home/s/web/w/includes/parser/Parser.php:1231
+/home/s/web/w/includes/parser/Parser.php:434
+/home/s/web/w/includes/content/WikitextContent.php:333
+/home/s/web/w/includes/content/AbstractContent.php:497
+/home/s/web/w/includes/page/WikiPage.php:2131
+/home/s/web/w/includes/page/WikiPage.php:1757
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/PageCreator.php:64
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ResultPrinter/QueryResultPrinterIntegrationTest.php:102
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+88) SMW\Tests\Integration\Query\SubcategoryQueryDBIntegrationTest::testSubcategoryHierarchyToQueryAllMembersOfTopCategory
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:242
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:354
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:335
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:262
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/SubcategoryQueryDBIntegrationTest.php:105
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+89) SMW\Tests\Integration\Query\SubqueryDBIntegrationTest::testSingletonPropertyChain
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:242
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:250
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:189
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/SubqueryDBIntegrationTest.php:375
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+90) SMW\Tests\Integration\Query\SubqueryDBIntegrationTest::testDisjunctiveSubobjectSubquery
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/includes/db/Database.php:1726
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:179
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:302
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:262
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:224
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/SubqueryDBIntegrationTest.php:459
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+91) SMW\Tests\Integration\Query\UriTypeQueryTest::testQuerySearchPatternForUriType
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/includes/db/Database.php:1726
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:179
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:302
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:262
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:224
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/UriTypeQueryTest.php:309
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/UriTypeQueryTest.php:172
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+92) SMW\Tests\Integration\QueryProfilerQueryProcessorIntegrationTest::testCreateProfile with data set #0 (array('', '[[Modification date::+]]', '?Modification date', 'format=list'), array(4, array('_ASKST', '_ASKSI', '_ASKDE', '_ASKFO'), array('list', 1, 1, '[[Modification date::+]]')))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/QueryProfilerQueryProcessorIntegrationTest.php:48
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+93) SMW\Tests\Integration\QueryProfilerQueryProcessorIntegrationTest::testCreateProfile with data set #1 (array('', '[[Modification date::+]][[Cat...:Foo]]', '?Modification date', '?Has title', 'format=list'), array(4, array('_ASKST', '_ASKSI', '_ASKDE', '_ASKFO'), array('list', 2, 1, '[[Modification date::+]] [[Ca...:Foo]]')))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/QueryProfilerQueryProcessorIntegrationTest.php:48
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+94) SMW\Tests\Integration\QueryProfilerQueryProcessorIntegrationTest::testCreateProfile with data set #2 (array('', '[[Modification date::+]][[Cat...:Foo]]', '?Modification date', '?Has title', 'format=bar'), array(4, array('_ASKST', '_ASKSI', '_ASKDE', '_ASKFO'), array('table', 2, 1, '[[Modification date::+]] [[Ca...:Foo]]')))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/QueryProfilerQueryProcessorIntegrationTest.php:48
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+95) SMW\Tests\Integration\QueryResultQueryProcessorIntegrationTest::testCanConstructor with data set #0 (array(array('[[Modification date::+]]', '?Modification date', 'limit=10')), array(array('', '_wpg', 2, false), array('Modification date', '_dat', 1, '')))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/QueryResultQueryProcessorIntegrationTest.php:148
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/QueryResultQueryProcessorIntegrationTest.php:125
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+96) SMW\Tests\Integration\QueryResultQueryProcessorIntegrationTest::testCanConstructor with data set #1 (array(array('[[Modification date::+]]', '?Modification date#ISO', 'limit=10')), array(array('', '_wpg', 2, false), array('Modification date', '_dat', 1, 'ISO')))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/QueryResultQueryProcessorIntegrationTest.php:148
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/QueryResultQueryProcessorIntegrationTest.php:125
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+97) SMW\Tests\Integration\QueryResultQueryProcessorIntegrationTest::testToArray with data set #0 (array(array('[[Modification date::+]]', '?Modification date', 'limit=10')), array(array('', '_wpg', 2, false), array('Modification date', '_dat', 1, '')))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/QueryResultQueryProcessorIntegrationTest.php:148
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/QueryResultQueryProcessorIntegrationTest.php:134
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+98) SMW\Tests\Integration\QueryResultQueryProcessorIntegrationTest::testToArray with data set #1 (array(array('[[Modification date::+]]', '?Modification date#ISO', 'limit=10')), array(array('', '_wpg', 2, false), array('Modification date', '_dat', 1, 'ISO')))
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/QueryResultQueryProcessorIntegrationTest.php:148
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/QueryResultQueryProcessorIntegrationTest.php:134
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+99) SMW\Tests\Integration\QuerySourceIntegrationTest::testQueryProcessorWithDefaultSource
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/QuerySourceIntegrationTest.php:189
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/QuerySourceIntegrationTest.php:56
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+100) SMW\Tests\Integration\QuerySourceIntegrationTest::testQueryProcessorWithValidSource
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/QuerySourceIntegrationTest.php:189
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/QuerySourceIntegrationTest.php:73
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+101) SMW\Tests\Integration\MediaWiki\Hooks\RdfFileResourceTest::testFileUploadForDummyTextFile
+fopen(/home/s/web/w/images/lockdir/liycg6khbxv7qwgvvptx0yu00oxqrwb.lock): failed to open stream: Permission denied
+
+/home/s/web/w/includes/filebackend/lockmanager/FSLockManager.php:125
+/home/s/web/w/includes/filebackend/lockmanager/FSLockManager.php:72
+/home/s/web/w/includes/filebackend/lockmanager/LockManager.php:198
+/home/s/web/w/includes/filebackend/lockmanager/LockManager.php:110
+/home/s/web/w/includes/filebackend/lockmanager/LockManager.php:93
+/home/s/web/w/includes/filebackend/FileBackend.php:1235
+/home/s/web/w/includes/filerepo/file/LocalFile.php:1854
+/home/s/web/w/includes/filerepo/file/LocalFile.php:1148
+/home/s/web/w/includes/upload/UploadBase.php:715
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/File/LocalFileUpload.php:86
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Rdf/RdfFileResourceTest.php:80
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+102) SMW\Tests\Integration\MediaWiki\Import\CategoryInstanceAndCategoryHierarchyTest::testCategoryHierarchies
+Use of WikiImporter::__construct without a Config instance was deprecated in MediaWiki 1.25. [Called from SMW\Tests\Utils\Runners\XmlImportRunner::run in /home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/Runners/XmlImportRunner.php at line 67]
+
+/home/s/web/w/includes/debug/MWDebug.php:300
+/home/s/web/w/includes/debug/MWDebug.php:233
+/home/s/web/w/includes/GlobalFunctions.php:1187
+/home/s/web/w/includes/Import.php:56
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/Runners/XmlImportRunner.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Import/CategoryInstanceAndCategoryHierarchyTest.php:47
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+103) SMW\Tests\Integration\MediaWiki\Import\Maintenance\RebuildConceptCacheMaintenanceTest::testRebuildConceptCache
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:430
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ConceptParserFunction.php:133
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ConceptParserFunction.php:78
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php:175
+/home/s/web/w/includes/parser/Parser.php:3771
+/home/s/web/w/includes/parser/Parser.php:3505
+/home/s/web/w/includes/parser/Preprocessor_DOM.php:1169
+/home/s/web/w/includes/parser/Parser.php:3322
+/home/s/web/w/includes/parser/Parser.php:1231
+/home/s/web/w/includes/parser/Parser.php:434
+/home/s/web/w/includes/content/WikitextContent.php:333
+/home/s/web/w/includes/content/AbstractContent.php:497
+/home/s/web/w/includes/page/WikiPage.php:2131
+/home/s/web/w/includes/page/WikiPage.php:1757
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/PageCreator.php:64
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Import/Maintenance/RebuildConceptCacheMaintenanceTest.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Import/Maintenance/RebuildConceptCacheMaintenanceTest.php:77
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+104) SMW\Tests\Integration\MediaWiki\Import\Maintenance\RebuildDataMaintenanceTest::testRebuildData
+OutOfBoundsException: Unknown parameter type "smwformat".
+
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:130
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php:213
+/home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php:595
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:675
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:48
+/home/s/web/w/extensions/SemanticMediaWiki/src/Maintenance/DataRebuilder.php:325
+/home/s/web/w/extensions/SemanticMediaWiki/src/Maintenance/DataRebuilder.php:169
+/home/s/web/w/extensions/SemanticMediaWiki/src/Maintenance/DataRebuilder.php:148
+/home/s/web/w/extensions/SemanticMediaWiki/maintenance/rebuildData.php:138
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/Runners/MaintenanceRunner.php:86
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Import/Maintenance/RebuildDataMaintenanceTest.php:161
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Import/Maintenance/RebuildDataMaintenanceTest.php:108
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+105) SMW\Tests\Integration\MediaWiki\Import\PageWithTemplateInclusionTest::testImportToVerifyAnnotationByTemplateInclusion
+RuntimeException: Import failed with 
+Unknown parameter type "smwformat".##0 /home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php(213): ParamProcessor\ParamDefinitionFactory->newDefinition('smwformat', 'format', 'auto', 'smw-paramdesc-f...', false)
+#1 /home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php(595): ParamProcessor\ParamDefinitionFactory->newDefinitionFromArray(Array)
+#2 /home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php(675): ParamProcessor\ParamDefinition::getCleanDefinitions(Array)
+#3 /home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php(67): SMWQueryProcessor::getParameters()
+#4 /home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php(48): SMWQueryProcessor::getValidatorForParams(Array, Array, true)
+#5 /home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php(430): SMWQueryProcessor::getProcessedParams(Array, Array)
+#6 /home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php(136): SMWQueryProcessor::getQueryAndParamsFromFunctionParams(Array, 2, 1, true)
+#7 /home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php(115): SMW\AskParserFunction->doFetchResultsForRawParameters(Array)
+#8 /home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/ShowParserFunction.php(67): SMW\AskParserFunction->parse(Array)
+#9 /home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php(120): SMW\ShowParserFunction->parse(Array)
+#10 [internal function]: SMW\MediaWiki\Hooks\HookRegistry->SMW\MediaWiki\Hooks\{closure}(Object(Parser), 'Foo-1-19-7', '?Foo')
+#11 /home/s/web/w/includes/parser/Parser.php(3771): call_user_func_array(Object(Closure), Array)
+#12 /home/s/web/w/includes/parser/Parser.php(3505): Parser->callParserFunction(Object(PPFrame_DOM), '#show', Array)
+#13 /home/s/web/w/includes/parser/Preprocessor_DOM.php(1169): Parser->braceSubstitution(Array, Object(PPFrame_DOM))
+#14 /home/s/web/w/includes/parser/Parser.php(3322): PPFrame_DOM->expand(Object(PPNode_DOM), 0)
+#15 /home/s/web/w/includes/parser/Parser.php(1231): Parser->replaceVariables('[[Quux::garply]...')
+#16 /home/s/web/w/includes/parser/Parser.php(434): Parser->internalParse('[[Quux::garply]...')
+#17 /home/s/web/w/includes/content/WikitextContent.php(333): Parser->parse('[[Quux::garply]...', Object(Title), Object(ParserOptions), true, true, '2248')
+#18 /home/s/web/w/includes/content/AbstractContent.php(497): WikitextContent->fillParserOutput(Object(Title), '2248', Object(ParserOptions), true, Object(ParserOutput))
+#19 /home/s/web/w/includes/page/WikiPage.php(2131): AbstractContent->getParserOutput(Object(Title), '2248', Object(ParserOptions))
+#20 /home/s/web/w/includes/page/WikiPage.php(2182): WikiPage->prepareContentForEdit(Object(WikitextContent), Object(Revision), Object(User))
+#21 /home/s/web/w/includes/Import.php(1615): WikiPage->doEditUpdates(Object(Revision), Object(User), Array)
+#22 [internal function]: WikiRevision->importOldRevision()
+#23 /home/s/web/w/includes/db/Database.php(3338): call_user_func_array(Array, Array)
+#24 /home/s/web/w/includes/Import.php(325): DatabaseBase->deadlockLoop(Array)
+#25 [internal function]: WikiImporter->importRevision(Object(WikiRevision), Object(WikiImporter))
+#26 /home/s/web/w/includes/Import.php(462): call_user_func_array(Array, Array)
+#27 /home/s/web/w/includes/Import.php(835): WikiImporter->revisionCallback(Object(WikiRevision))
+#28 /home/s/web/w/includes/Import.php(782): WikiImporter->processRevision(Array, Array)
+#29 /home/s/web/w/includes/Import.php(731): WikiImporter->handleRevision(Array)
+#30 /home/s/web/w/includes/Import.php(555): WikiImporter->handlePage()
+#31 /home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/Runners/XmlImportRunner.php(82): WikiImporter->doImport()
+#32 /home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Import/PageWithTemplateInclusionTest.php(45): SMW\Tests\Utils\Runners\XmlImportRunner->run()
+#33 /home/s/web/w/extensions/SemanticMediaWiki/vendor/phpunit/phpunit/src/Framework/TestCase.php(742): SMW\Tests\Integration\MediaWiki\Import\PageWithTemplateInclusionTest->setUp()
+#34 /home/s/web/w/extensions/SemanticMediaWiki/vendor/phpunit/phpunit/src/Framework/TestResult.php(601): PHPUnit_Framework_TestCase->runBare()
+#35 /home/s/web/w/extensions/SemanticMediaWiki/vendor/phpunit/phpunit/src/Framework/TestCase.php(702): PHPUnit_Framework_TestResult->run(Object(SMW\Tests\Integration\MediaWiki\Import\PageWithTemplateInclusionTest))
+#36 /home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php(108): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#37 /home/s/web/w/extensions/SemanticMediaWiki/vendor/phpunit/phpunit/src/Framework/TestSuite.php(735): SMW\Tests\MwDBaseUnitTestCase->run(Object(PHPUnit_Framework_TestResult))
+#38 /home/s/web/w/extensions/SemanticMediaWiki/vendor/phpunit/phpunit/src/Framework/TestSuite.php(735): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#39 /home/s/web/w/extensions/SemanticMediaWiki/vendor/phpunit/phpunit/src/Framework/TestSuite.php(735): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#40 /home/s/web/w/extensions/SemanticMediaWiki/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(432): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#41 /home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php(148): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#42 /home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php(100): PHPUnit_TextUI_Command->run(Array, true)
+#43 /home/s/web/w/tests/phpunit/phpunit.php(239): PHPUnit_TextUI_Command::main()
+#44 {main}
+No pages to import.
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/Runners/XmlImportRunner.php:104
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Import/PageWithTemplateInclusionTest.php:46
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+106) SMW\Tests\Integration\MediaWiki\Import\RecordDataTypeTest::testImportOfRecordValues
+RuntimeException: Import failed with 
+Unknown parameter type "smwformat".##0 /home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php(213): ParamProcessor\ParamDefinitionFactory->newDefinition('smwformat', 'format', 'auto', 'smw-paramdesc-f...', false)
+#1 /home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php(595): ParamProcessor\ParamDefinitionFactory->newDefinitionFromArray(Array)
+#2 /home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php(675): ParamProcessor\ParamDefinition::getCleanDefinitions(Array)
+#3 /home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php(67): SMWQueryProcessor::getParameters()
+#4 /home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php(48): SMWQueryProcessor::getValidatorForParams(Array, Array, true)
+#5 /home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php(430): SMWQueryProcessor::getProcessedParams(Array, Array)
+#6 /home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php(136): SMWQueryProcessor::getQueryAndParamsFromFunctionParams(Array, 2, 1, false)
+#7 /home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php(115): SMW\AskParserFunction->doFetchResultsForRawParameters(Array)
+#8 /home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php(103): SMW\AskParserFunction->parse(Array)
+#9 [internal function]: SMW\MediaWiki\Hooks\HookRegistry->SMW\MediaWiki\Hooks\{closure}(Object(Parser), '[[Has record pa...', '?#=Internal rec...', 'format=broadtab...')
+#10 /home/s/web/w/includes/parser/Parser.php(3771): call_user_func_array(Object(Closure), Array)
+#11 /home/s/web/w/includes/parser/Parser.php(3505): Parser->callParserFunction(Object(PPFrame_DOM), '#ask', Array)
+#12 /home/s/web/w/includes/parser/Preprocessor_DOM.php(1169): Parser->braceSubstitution(Array, Object(PPFrame_DOM))
+#13 /home/s/web/w/includes/parser/Parser.php(3322): PPFrame_DOM->expand(Object(PPNode_DOM), 0)
+#14 /home/s/web/w/includes/parser/Parser.php(1231): Parser->replaceVariables('== Synopsis ==\n...')
+#15 /home/s/web/w/includes/parser/Parser.php(434): Parser->internalParse('== Synopsis ==\n...')
+#16 /home/s/web/w/includes/content/WikitextContent.php(333): Parser->parse('== Synopsis ==\n...', Object(Title), Object(ParserOptions), true, true, '2269')
+#17 /home/s/web/w/includes/content/AbstractContent.php(497): WikitextContent->fillParserOutput(Object(Title), '2269', Object(ParserOptions), true, Object(ParserOutput))
+#18 /home/s/web/w/includes/page/WikiPage.php(2131): AbstractContent->getParserOutput(Object(Title), '2269', Object(ParserOptions))
+#19 /home/s/web/w/includes/page/WikiPage.php(2182): WikiPage->prepareContentForEdit(Object(WikitextContent), Object(Revision), Object(User))
+#20 /home/s/web/w/includes/Import.php(1615): WikiPage->doEditUpdates(Object(Revision), Object(User), Array)
+#21 [internal function]: WikiRevision->importOldRevision()
+#22 /home/s/web/w/includes/db/Database.php(3338): call_user_func_array(Array, Array)
+#23 /home/s/web/w/includes/Import.php(325): DatabaseBase->deadlockLoop(Array)
+#24 [internal function]: WikiImporter->importRevision(Object(WikiRevision), Object(WikiImporter))
+#25 /home/s/web/w/includes/Import.php(462): call_user_func_array(Array, Array)
+#26 /home/s/web/w/includes/Import.php(835): WikiImporter->revisionCallback(Object(WikiRevision))
+#27 /home/s/web/w/includes/Import.php(782): WikiImporter->processRevision(Array, Array)
+#28 /home/s/web/w/includes/Import.php(731): WikiImporter->handleRevision(Array)
+#29 /home/s/web/w/includes/Import.php(555): WikiImporter->handlePage()
+#30 /home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/Runners/XmlImportRunner.php(82): WikiImporter->doImport()
+#31 /home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Import/RecordDataTypeTest.php(48): SMW\Tests\Utils\Runners\XmlImportRunner->run()
+#32 /home/s/web/w/extensions/SemanticMediaWiki/vendor/phpunit/phpunit/src/Framework/TestCase.php(742): SMW\Tests\Integration\MediaWiki\Import\RecordDataTypeTest->setUp()
+#33 /home/s/web/w/extensions/SemanticMediaWiki/vendor/phpunit/phpunit/src/Framework/TestResult.php(601): PHPUnit_Framework_TestCase->runBare()
+#34 /home/s/web/w/extensions/SemanticMediaWiki/vendor/phpunit/phpunit/src/Framework/TestCase.php(702): PHPUnit_Framework_TestResult->run(Object(SMW\Tests\Integration\MediaWiki\Import\RecordDataTypeTest))
+#35 /home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php(108): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#36 /home/s/web/w/extensions/SemanticMediaWiki/vendor/phpunit/phpunit/src/Framework/TestSuite.php(735): SMW\Tests\MwDBaseUnitTestCase->run(Object(PHPUnit_Framework_TestResult))
+#37 /home/s/web/w/extensions/SemanticMediaWiki/vendor/phpunit/phpunit/src/Framework/TestSuite.php(735): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#38 /home/s/web/w/extensions/SemanticMediaWiki/vendor/phpunit/phpunit/src/Framework/TestSuite.php(735): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#39 /home/s/web/w/extensions/SemanticMediaWiki/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(432): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#40 /home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php(148): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#41 /home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php(100): PHPUnit_TextUI_Command->run(Array, true)
+#42 /home/s/web/w/tests/phpunit/phpunit.php(239): PHPUnit_TextUI_Command::main()
+#43 {main}
+Internal error: Status::getWikiText called for a good result, this is incorrect
+
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/Runners/XmlImportRunner.php:104
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Import/RecordDataTypeTest.php:49
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+107) SMW\Tests\Integration\MediaWiki\Import\TimeDataTypeTest::testImportOfDifferentDateWithAssortmentOfOutputConversion
+RuntimeException: Import failed with 
+Unknown parameter type "smwformat".##0 /home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinitionFactory.php(213): ParamProcessor\ParamDefinitionFactory->newDefinition('smwformat', 'format', 'auto', 'smw-paramdesc-f...', false)
+#1 /home/s/web/w/extensions/SemanticMediaWiki/vendor/param-processor/param-processor/src/ParamDefinition.php(595): ParamProcessor\ParamDefinitionFactory->newDefinitionFromArray(Array)
+#2 /home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php(675): ParamProcessor\ParamDefinition::getCleanDefinitions(Array)
+#3 /home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php(67): SMWQueryProcessor::getParameters()
+#4 /home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php(48): SMWQueryProcessor::getValidatorForParams(Array, Array, true)
+#5 /home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php(430): SMWQueryProcessor::getProcessedParams(Array, Array)
+#6 /home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php(136): SMWQueryProcessor::getQueryAndParamsFromFunctionParams(Array, 2, 1, false)
+#7 /home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php(115): SMW\AskParserFunction->doFetchResultsForRawParameters(Array)
+#8 /home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php(103): SMW\AskParserFunction->parse(Array)
+#9 [internal function]: SMW\MediaWiki\Hooks\HookRegistry->SMW\MediaWiki\Hooks\{closure}(Object(Parser), '[[Has query dat...', '?Has query date', '?Has query date...', '?Has query date...')
+#10 /home/s/web/w/includes/parser/Parser.php(3771): call_user_func_array(Object(Closure), Array)
+#11 /home/s/web/w/includes/parser/Parser.php(3505): Parser->callParserFunction(Object(PPFrame_DOM), '#ask', Array)
+#12 /home/s/web/w/includes/parser/Preprocessor_DOM.php(1169): Parser->braceSubstitution(Array, Object(PPFrame_DOM))
+#13 /home/s/web/w/includes/parser/Parser.php(3322): PPFrame_DOM->expand(Object(PPNode_DOM), 0)
+#14 /home/s/web/w/includes/parser/Parser.php(1231): Parser->replaceVariables('== Synopsis == ...')
+#15 /home/s/web/w/includes/parser/Parser.php(434): Parser->internalParse('== Synopsis == ...')
+#16 /home/s/web/w/includes/content/WikitextContent.php(333): Parser->parse('== Synopsis == ...', Object(Title), Object(ParserOptions), true, true, '2294')
+#17 /home/s/web/w/includes/content/AbstractContent.php(497): WikitextContent->fillParserOutput(Object(Title), '2294', Object(ParserOptions), true, Object(ParserOutput))
+#18 /home/s/web/w/includes/page/WikiPage.php(2131): AbstractContent->getParserOutput(Object(Title), '2294', Object(ParserOptions))
+#19 /home/s/web/w/includes/page/WikiPage.php(2182): WikiPage->prepareContentForEdit(Object(WikitextContent), Object(Revision), Object(User))
+#20 /home/s/web/w/includes/Import.php(1615): WikiPage->doEditUpdates(Object(Revision), Object(User), Array)
+#21 [internal function]: WikiRevision->importOldRevision()
+#22 /home/s/web/w/includes/db/Database.php(3338): call_user_func_array(Array, Array)
+#23 /home/s/web/w/includes/Import.php(325): DatabaseBase->deadlockLoop(Array)
+#24 [internal function]: WikiImporter->importRevision(Object(WikiRevision), Object(WikiImporter))
+#25 /home/s/web/w/includes/Import.php(462): call_user_func_array(Array, Array)
+#26 /home/s/web/w/includes/Import.php(835): WikiImporter->revisionCallback(Object(WikiRevision))
+#27 /home/s/web/w/includes/Import.php(782): WikiImporter->processRevision(Array, Array)
+#28 /home/s/web/w/includes/Import.php(731): WikiImporter->handleRevision(Array)
+#29 /home/s/web/w/includes/Import.php(555): WikiImporter->handlePage()
+#30 /home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/Runners/XmlImportRunner.php(82): WikiImporter->doImport()
+#31 /home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Import/TimeDataTypeTest.php(59): SMW\Tests\Utils\Runners\XmlImportRunner->run()
+#32 /home/s/web/w/extensions/SemanticMediaWiki/vendor/phpunit/phpunit/src/Framework/TestCase.php(742): SMW\Tests\Integration\MediaWiki\Import\TimeDataTypeTest->setUp()
+#33 /home/s/web/w/extensions/SemanticMediaWiki/vendor/phpunit/phpunit/src/Framework/TestResult.php(601): PHPUnit_Framework_TestCase->runBare()
+#34 /home/s/web/w/extensions/SemanticMediaWiki/vendor/phpunit/phpunit/src/Framework/TestCase.php(702): PHPUnit_Framework_TestResult->run(Object(SMW\Tests\Integration\MediaWiki\Import\TimeDataTypeTest))
+#35 /home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php(108): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#36 /home/s/web/w/extensions/SemanticMediaWiki/vendor/phpunit/phpunit/src/Framework/TestSuite.php(735): SMW\Tests\MwDBaseUnitTestCase->run(Object(PHPUnit_Framework_TestResult))
+#37 /home/s/web/w/extensions/SemanticMediaWiki/vendor/phpunit/phpunit/src/Framework/TestSuite.php(735): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#38 /home/s/web/w/extensions/SemanticMediaWiki/vendor/phpunit/phpunit/src/Framework/TestSuite.php(735): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#39 /home/s/web/w/extensions/SemanticMediaWiki/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(432): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#40 /home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php(148): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#41 /home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php(100): PHPUnit_TextUI_Command->run(Array, true)
+#42 /home/s/web/w/tests/phpunit/phpunit.php(239): PHPUnit_TextUI_Command::main()
+#43 {main}
+Internal error: Status::getWikiText called for a good result, this is incorrect
+
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/Runners/XmlImportRunner.php:104
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Import/TimeDataTypeTest.php:60
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+--
+
+There were 20 skipped tests:
+
+1) SMW\Tests\Integration\MediaWiki\Hooks\FileUploadIntegrationTest::testReUploadDummyTextFileToEditFilePage
+This test depends on "SMW\Tests\Integration\MediaWiki\Hooks\FileUploadIntegrationTest::testFileUploadForDummyTextFile" to pass.
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+2) SMW\Tests\Integration\MediaWiki\Hooks\TitleMoveCompleteIntegrationTest::testPageMoveWithRemovalOfOldPage
+Database was excluded and is not expected to support this test
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:151
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Hooks/TitleMoveCompleteIntegrationTest.php:105
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+3) SMW\Tests\Integration\MediaWiki\SearchInPageDBIntegrationTest::testSearchForGeographicCoordinateValueAsTerm
+Requires 'Geographic coordinate' to be a supported data type (see Semantic Maps)
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/SearchInPageDBIntegrationTest.php:62
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+4) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "query-01-04-blob-disjunction.json" ('/home/s/web/w/extensions/Sema...n.json')
+Skip postgres because of Query failed: ERROR:  duplicate key value violates unique constraint, Key (id)=(146) already exists
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:148
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:61
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+5) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "format-01-02-template.json" ('/home/s/web/w/extensions/Sema...e.json')
+Unicode needs special treatment in postgres
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:148
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:61
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+6) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "query-02-01-concept.json" ('/home/s/web/w/extensions/Sema...t.json')
+Unable to run concept tests on postgres, see #781
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:148
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:61
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+7) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "query-01-02-blob.json" ('/home/s/web/w/extensions/Sema...b.json')
+Unable to run concept tests on postgres, failed with duplicate key value violates unique constraint
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:148
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:61
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+8) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "query-02-02-concept-circular.json" ('/home/s/web/w/extensions/Sema...r.json')
+Unable to run concept tests on postgres, see #781
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:148
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:61
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+9) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "format-03-01-category-en.json" ('/home/s/web/w/extensions/Sema...n.json')
+Unicode needs special treatment in postgres
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:148
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:61
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+10) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "query-01-03-blob.json" ('/home/s/web/w/extensions/Sema...b.json')
+Requires special \ escape sequence on postgres
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:148
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:61
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+11) SMW\Tests\Integration\SPARQLStore\QueryResultLookupWithoutBaseStoreIntegrationTest::testQuerySubjects_afterUpdatingSemanticData
+Requires a SPARQLStore instance
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/SPARQLStore/QueryResultLookupWithoutBaseStoreIntegrationTest.php:51
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+12) SMW\Tests\Integration\SPARQLStore\QueryResultLookupWithoutBaseStoreIntegrationTest::testQueryZeroResults_afterSubjectRemoval
+Requires a SPARQLStore instance
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/SPARQLStore/QueryResultLookupWithoutBaseStoreIntegrationTest.php:51
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+13) SMW\Tests\Integration\SPARQLStore\QueryResultLookupWithoutBaseStoreIntegrationTest::testQuerySubjects_onNamspaceRestrictedCondition
+Requires a SPARQLStore instance
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/SPARQLStore/QueryResultLookupWithoutBaseStoreIntegrationTest.php:51
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+14) SMW\Tests\Integration\SPARQLStore\QueryResultLookupWithoutBaseStoreIntegrationTest::testQuerySubobjects_afterUpdatingWithEmptyContainerAllAssociatedEntitiesGetRemovedFromGraph
+Requires a SPARQLStore instance
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/SPARQLStore/QueryResultLookupWithoutBaseStoreIntegrationTest.php:51
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+15) SMW\Tests\Integration\SPARQLStore\RedirectLookupIntegrationTest::testRedirectTragetLookupForNonExistingEntry with data set #0 (SMW\Exporter\Element\ExpNsResource Object (...))
+Requires a SPARQLStore instance
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/SPARQLStore/RedirectLookupIntegrationTest.php:38
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+16) SMW\Tests\Integration\SPARQLStore\RedirectLookupIntegrationTest::testRedirectTragetLookupForNonExistingEntry with data set #1 (SMW\Exporter\Element\ExpNsResource Object (...))
+Requires a SPARQLStore instance
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/SPARQLStore/RedirectLookupIntegrationTest.php:38
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+17) SMW\Tests\Integration\SPARQLStore\RedirectLookupIntegrationTest::testRedirectTragetLookupForExistingEntry
+Requires a SPARQLStore instance
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/SPARQLStore/RedirectLookupIntegrationTest.php:38
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+18) SMW\Tests\System\InstallationGlobalsProviderIntegrityTest::testNamespaceSettingOnExampleIfSet
+Skip test due to missing http://example.org/id/ setting
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/System/InstallationConfigurationIntegrityTest.php:60
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+19) SMW\Tests\System\InstallationGlobalsProviderIntegrityTest::testNamespacesWithSemanticLinksOnTravisCustomNamespace with data set #0 ('GLOBALS', array(true, false, true, false, true, false, true, false, true, false, true, false, true, false, false, false, false, false, true, false, true, false))
+Test can only be executed with a specified NS_TRAVIS
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/System/InstallationConfigurationIntegrityTest.php:75
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+20) SMW\Tests\System\InstallationGlobalsProviderIntegrityTest::testNamespacesWithSemanticLinksOnTravisCustomNamespace with data set #1 ('Settings', array(true, false, true, false, true, false, true, false, true, false, true, false, true, false, false, false, false, false, true, false, true, false))
+Test can only be executed with a specified NS_TRAVIS
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/System/InstallationConfigurationIntegrityTest.php:75
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:148
+/home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php:100
+
+FAILURES!
+Tests: 3020, Assertions: 7448, Errors: 107, Skipped: 20.
