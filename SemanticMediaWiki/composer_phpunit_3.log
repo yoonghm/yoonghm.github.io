@@ -1,0 +1,730 @@
+composer phpunit
+> php ../../tests/phpunit/phpunit.php -c phpunit.xml.dist
+
+MediaWiki 1.25.2 root vendor autoloader ...
+
+SemanticMediaWiki 2.2.2 (SMWSQLStore3 / postgres) ...
+
+PHPUnit 4.8.9 by Sebastian Bergmann and contributors.
+
+Runtime:	PHP 5.6.13RC1
+Configuration:	/home/s/web/w/extensions/SemanticMediaWiki/phpunit.xml.dist
+
+.............................................................   61 / 3132 (  1%)
+.............................................................  122 / 3132 (  3%)
+.............................................................  183 / 3132 (  5%)
+.............................................................  244 / 3132 (  7%)
+.............................................................  305 / 3132 (  9%)
+.............................................................  366 / 3132 ( 11%)
+.............................................................  427 / 3132 ( 13%)
+.............................................................  488 / 3132 ( 15%)
+.............................................................  549 / 3132 ( 17%)
+.............................................................  610 / 3132 ( 19%)
+...EE.FFEE.F.............................E...................  671 / 3132 ( 21%)
+.............................................................  732 / 3132 ( 23%)
+.............................................................  793 / 3132 ( 25%)
+.............................................................  854 / 3132 ( 27%)
+.............................................................  915 / 3132 ( 29%)
+.............................................................  976 / 3132 ( 31%)
+............................................................. 1037 / 3132 ( 33%)
+............................................................. 1098 / 3132 ( 35%)
+............................................................. 1159 / 3132 ( 37%)
+............................................................. 1220 / 3132 ( 38%)
+............................................................. 1281 / 3132 ( 40%)
+............................................................. 1342 / 3132 ( 42%)
+............................................................. 1403 / 3132 ( 44%)
+............................................................. 1464 / 3132 ( 46%)
+............................................................. 1525 / 3132 ( 48%)
+............................................................. 1586 / 3132 ( 50%)
+............................................................. 1647 / 3132 ( 52%)
+............................................................. 1708 / 3132 ( 54%)
+............................................................. 1769 / 3132 ( 56%)
+............................................................. 1830 / 3132 ( 58%)
+............................................................. 1891 / 3132 ( 60%)
+............................................................. 1952 / 3132 ( 62%)
+............................................................. 2013 / 3132 ( 64%)
+............................................................. 2074 / 3132 ( 66%)
+............................................................. 2135 / 3132 ( 68%)
+............................................................. 2196 / 3132 ( 70%)
+............................................................. 2257 / 3132 ( 72%)
+............................................................. 2318 / 3132 ( 74%)
+............................................................. 2379 / 3132 ( 75%)
+............................................................. 2440 / 3132 ( 77%)
+............................................................. 2501 / 3132 ( 79%)
+............................................................. 2562 / 3132 ( 81%)
+............................................................. 2623 / 3132 ( 83%)
+................ESE.................S........................ 2684 / 3132 ( 85%)
+....S......ES.SESSSE..S...SE.E............E..EE........E..... 2745 / 3132 ( 87%)
+.........E...E.EE....................ESSSSSSS................ 2806 / 3132 ( 89%)
+.................E...
+SMW\Tests\Integration\MediaWiki\Import\Maintenance\RebuildDataMaintenanceTest testRebuildData ran for 13.467 seconds
+...E.................................... 2867 / 3132 ( 91%)
+............................................................. 2928 / 3132 ( 93%)
+............................................................. 2989 / 3132 ( 95%)
+............................................................. 3050 / 3132 ( 97%)
+.SSS......................................................... 3111 / 3132 ( 99%)
+.....................
+
+Time: 2.47 minutes, Memory: 193.50Mb
+
+There were 23 errors:
+
+1) SMW\Tests\MediaWiki\Api\AskArgsTest::testExecuteOnStore with data set #0 (array('[[Modification date::+]]', null, null), array(true))
+Use of ApiBase::getResultData was deprecated in MediaWiki 1.25. [Called from SMW\Tests\Utils\MwApiFactory::doApiRequest in /home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/MwApiFactory.php at line 56]
+
+/home/s/web/w/includes/debug/MWDebug.php:300
+/home/s/web/w/includes/debug/MWDebug.php:233
+/home/s/web/w/includes/GlobalFunctions.php:1187
+/home/s/web/w/includes/api/ApiBase.php:2740
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/MwApiFactory.php:56
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Api/AskArgsTest.php:64
+
+2) SMW\Tests\MediaWiki\Api\AskArgsTest::testExecuteOnStore with data set #1 (array('[[Modification date::+]]', null, 'limit=10'), array(true))
+Use of ApiResult::getData was deprecated in MediaWiki 1.25. [Called from ApiBase::getResultData in /home/s/web/w/includes/api/ApiBase.php at line 2741]
+
+/home/s/web/w/includes/debug/MWDebug.php:300
+/home/s/web/w/includes/debug/MWDebug.php:233
+/home/s/web/w/includes/GlobalFunctions.php:1187
+/home/s/web/w/includes/api/ApiResult.php:1136
+/home/s/web/w/includes/api/ApiBase.php:2741
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/MwApiFactory.php:56
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Api/AskArgsTest.php:64
+
+3) SMW\Tests\MediaWiki\Api\AskArgsTest::testExecuteOnStore with data set #5 (array('Modification date::+', 'Modification date', 'limit=1'), array(array('', '_wpg', 2, false), array('Modification date', '_dat', 1, '')))
+Use of ApiResult::disableSizeCheck was deprecated in MediaWiki 1.24. [Called from SMW\MediaWiki\Api\Query::addQueryResult in /home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/Query.php at line 77]
+
+/home/s/web/w/includes/debug/MWDebug.php:300
+/home/s/web/w/includes/debug/MWDebug.php:233
+/home/s/web/w/includes/GlobalFunctions.php:1187
+/home/s/web/w/includes/api/ApiResult.php:1151
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/Query.php:77
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/AskArgs.php:31
+/home/s/web/w/includes/api/ApiMain.php:1098
+/home/s/web/w/includes/api/ApiMain.php:407
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/MwApiFactory.php:54
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Api/AskArgsTest.php:64
+
+4) SMW\Tests\MediaWiki\Api\AskArgsTest::testExecuteOnMockStore
+Use of ApiResult::enableSizeCheck was deprecated in MediaWiki 1.24. [Called from SMW\MediaWiki\Api\Query::addQueryResult in /home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/Query.php at line 79]
+
+/home/s/web/w/includes/debug/MWDebug.php:300
+/home/s/web/w/includes/debug/MWDebug.php:233
+/home/s/web/w/includes/GlobalFunctions.php:1187
+/home/s/web/w/includes/api/ApiResult.php:1160
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/Query.php:79
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Api/AskArgs.php:31
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Api/AskArgsTest.php:114
+
+5) SMW\Tests\MediaWiki\Api\QueryTest::testAddQueryResultOnMockStore
+Use of ApiMain to ApiResult::__construct was deprecated in MediaWiki 1.25. [Called from SMW\Tests\Utils\MwApiFactory::newApiResult in /home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/MwApiFactory.php at line 38]
+
+/home/s/web/w/includes/debug/MWDebug.php:300
+/home/s/web/w/includes/debug/MWDebug.php:233
+/home/s/web/w/includes/GlobalFunctions.php:1187
+/home/s/web/w/includes/api/ApiResult.php:143
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/MwApiFactory.php:38
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Api/QueryTest.php:109
+
+6) SMW\Tests\Integration\MediaWiki\Hooks\FileUploadIntegrationTest::testFileUploadForDummyTextFile
+fopen(/home/s/web/w/images/lockdir/lzil6qvknd1r4uvzu27n91vgcf5srbl.lock): failed to open stream: Permission denied
+
+/home/s/web/w/includes/filebackend/lockmanager/FSLockManager.php:125
+/home/s/web/w/includes/filebackend/lockmanager/FSLockManager.php:72
+/home/s/web/w/includes/filebackend/lockmanager/LockManager.php:198
+/home/s/web/w/includes/filebackend/lockmanager/LockManager.php:110
+/home/s/web/w/includes/filebackend/lockmanager/LockManager.php:93
+/home/s/web/w/includes/filebackend/FileBackend.php:1235
+/home/s/web/w/includes/filerepo/file/LocalFile.php:1854
+/home/s/web/w/includes/filerepo/file/LocalFile.php:1148
+/home/s/web/w/includes/upload/UploadBase.php:715
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/File/LocalFileUpload.php:86
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Hooks/FileUploadIntegrationTest.php:111
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+7) SMW\Tests\Integration\MediaWiki\Hooks\FileUploadIntegrationTest::testDummyTextFileUploadForDisabledNamespace
+fopen(/home/s/web/w/images/lockdir/scg2qat6qygwkefg37bbisge8uvzibl.lock): failed to open stream: Permission denied
+
+/home/s/web/w/includes/filebackend/lockmanager/FSLockManager.php:125
+/home/s/web/w/includes/filebackend/lockmanager/FSLockManager.php:72
+/home/s/web/w/includes/filebackend/lockmanager/LockManager.php:198
+/home/s/web/w/includes/filebackend/lockmanager/LockManager.php:110
+/home/s/web/w/includes/filebackend/lockmanager/LockManager.php:93
+/home/s/web/w/includes/filebackend/FileBackend.php:1235
+/home/s/web/w/includes/filerepo/file/LocalFile.php:1854
+/home/s/web/w/includes/filerepo/file/LocalFile.php:1148
+/home/s/web/w/includes/upload/UploadBase.php:715
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/File/LocalFileUpload.php:86
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Hooks/FileUploadIntegrationTest.php:164
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+8) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "format-01-03-template-self-reference.json" ('/home/s/web/w/extensions/Sema...e.json')
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/includes/db/Database.php:1726
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:179
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:302
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:262
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:224
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:508
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:154
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php:103
+/home/s/web/w/includes/parser/Parser.php:3771
+/home/s/web/w/includes/parser/Parser.php:3505
+/home/s/web/w/includes/parser/Preprocessor_DOM.php:1169
+/home/s/web/w/includes/parser/Parser.php:3647
+/home/s/web/w/includes/parser/Preprocessor_DOM.php:1169
+/home/s/web/w/includes/parser/Parser.php:3322
+/home/s/web/w/extensions/SemanticMediaWiki/includes/queryprinters/ResultPrinter.php:308
+/home/s/web/w/extensions/SemanticMediaWiki/includes/queryprinters/ResultPrinter.php:253
+/home/s/web/w/extensions/SemanticMediaWiki/includes/queryprinters/ResultPrinter.php:215
+/home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php:514
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:154
+/home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php:115
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php:103
+/home/s/web/w/includes/parser/Parser.php:3771
+/home/s/web/w/includes/parser/Parser.php:3505
+/home/s/web/w/includes/parser/Preprocessor_DOM.php:1169
+/home/s/web/w/includes/parser/Parser.php:3322
+/home/s/web/w/includes/parser/Parser.php:1231
+/home/s/web/w/includes/parser/Parser.php:434
+/home/s/web/w/includes/content/WikitextContent.php:333
+/home/s/web/w/includes/content/AbstractContent.php:497
+/home/s/web/w/includes/page/WikiPage.php:2131
+/home/s/web/w/includes/page/WikiPage.php:1757
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/PageCreator.php:64
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:113
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:87
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+9) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "query-01-01-blob.json" ('/home/s/web/w/extensions/Sema...b.json')
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/includes/db/Database.php:1726
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:179
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:302
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:262
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:224
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/QueryTestCaseProcessor.php:95
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:94
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+10) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "query-06-03-page-set-intext-parser.json" ('/home/s/web/w/extensions/Sema...r.json')
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/includes/db/Database.php:1726
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:179
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:302
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:262
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:224
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/QueryTestCaseProcessor.php:95
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:94
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+11) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "query-04-01-subproperty.json" ('/home/s/web/w/extensions/Sema...y.json')
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:242
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:354
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:335
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:262
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/QueryTestCaseProcessor.php:95
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:94
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+12) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "query-03-01-import-foaf.json" ('/home/s/web/w/extensions/Sema...f.json')
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/includes/db/Database.php:1726
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:179
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:302
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:262
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:224
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/QueryTestCaseProcessor.php:95
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:94
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+13) SMW\Tests\Integration\Query\ConjunctionQueryDBIntegrationTest::testNestedPropertyConjunction
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:242
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:354
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:335
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:262
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:197
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ConjunctionQueryDBIntegrationTest.php:241
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+14) SMW\Tests\Integration\Query\DisjunctionQueryDBIntegrationTest::testDisjunctionSubqueryForPageTypePropertyChainThatComparesEqualToValue
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/includes/db/Database.php:1726
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:179
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:302
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:262
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:224
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/DisjunctionQueryDBIntegrationTest.php:155
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+15) SMW\Tests\Integration\Query\DisjunctionQueryDBIntegrationTest::testSubqueryDisjunction
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:242
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:250
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/DisjunctionQueryDBIntegrationTest.php:234
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+16) SMW\Tests\Integration\Query\PageTypeRegexQueryTest::testPageLikeNotLikeWildcardSearch
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/includes/db/Database.php:1726
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:179
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:302
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:262
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:224
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/PageTypeRegexQueryTest.php:192
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/PageTypeRegexQueryTest.php:169
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+17) SMW\Tests\Integration\Query\SubcategoryQueryDBIntegrationTest::testSubcategoryHierarchyToQueryAllMembersOfTopCategory
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:242
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:354
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:335
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:262
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/SubcategoryQueryDBIntegrationTest.php:105
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+18) SMW\Tests\Integration\Query\SubqueryDBIntegrationTest::testSingletonPropertyChain
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:242
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:250
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:189
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/SubqueryDBIntegrationTest.php:375
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+19) SMW\Tests\Integration\Query\SubqueryDBIntegrationTest::testDisjunctiveSubobjectSubquery
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/includes/db/Database.php:1726
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:179
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:302
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:262
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:224
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/SubqueryDBIntegrationTest.php:459
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+20) SMW\Tests\Integration\Query\UriTypeQueryTest::testQuerySearchPatternForUriType
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE
+
+/home/s/web/w/includes/db/DatabasePostgres.php:490
+/home/s/web/w/includes/db/Database.php:1162
+/home/s/web/w/includes/db/Database.php:1726
+/home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php:179
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:302
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:262
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:224
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:139
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php:121
+/home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php:216
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:303
+/home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php:294
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/UriTypeQueryTest.php:309
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/UriTypeQueryTest.php:172
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+21) SMW\Tests\Integration\MediaWiki\Hooks\RdfFileResourceTest::testFileUploadForDummyTextFile
+fopen(/home/s/web/w/images/lockdir/liycg6khbxv7qwgvvptx0yu00oxqrwb.lock): failed to open stream: Permission denied
+
+/home/s/web/w/includes/filebackend/lockmanager/FSLockManager.php:125
+/home/s/web/w/includes/filebackend/lockmanager/FSLockManager.php:72
+/home/s/web/w/includes/filebackend/lockmanager/LockManager.php:198
+/home/s/web/w/includes/filebackend/lockmanager/LockManager.php:110
+/home/s/web/w/includes/filebackend/lockmanager/LockManager.php:93
+/home/s/web/w/includes/filebackend/FileBackend.php:1235
+/home/s/web/w/includes/filerepo/file/LocalFile.php:1854
+/home/s/web/w/includes/filerepo/file/LocalFile.php:1148
+/home/s/web/w/includes/upload/UploadBase.php:715
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/File/LocalFileUpload.php:86
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Rdf/RdfFileResourceTest.php:80
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+22) SMW\Tests\Integration\MediaWiki\Import\CategoryInstanceAndCategoryHierarchyTest::testCategoryHierarchies
+Use of WikiImporter::__construct without a Config instance was deprecated in MediaWiki 1.25. [Called from SMW\Tests\Utils\Runners\XmlImportRunner::run in /home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/Runners/XmlImportRunner.php at line 67]
+
+/home/s/web/w/includes/debug/MWDebug.php:300
+/home/s/web/w/includes/debug/MWDebug.php:233
+/home/s/web/w/includes/GlobalFunctions.php:1187
+/home/s/web/w/includes/Import.php:56
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/Runners/XmlImportRunner.php:67
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Import/CategoryInstanceAndCategoryHierarchyTest.php:47
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+23) SMW\Tests\Integration\MediaWiki\Import\RecordDataTypeTest::testImportOfRecordValues
+RuntimeException: Import failed with
+pg_send_query(): There are results on this connection. Call pg_get_result() until it returns FALSE##0 [internal function]: PHPUnit_Util_ErrorHandler::handleError(8, 'pg_send_query()...', '/home/s/web/w/i...', 490, Array)
+#1 /home/s/web/w/includes/db/DatabasePostgres.php(490): pg_send_query(Resource id #596, 'SELECT /* SMW\\S...')
+#2 /home/s/web/w/includes/db/Database.php(1162): DatabasePostgres->doQuery('SELECT /* SMW\\S...')
+#3 /home/s/web/w/includes/db/Database.php(1726): DatabaseBase->query('SELECT  s_id  F...', 'SMW\\SQLStore\\Qu...')
+#4 /home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Database.php(179): DatabaseBase->select('"sunittest_smw_...', 's_id', 'o_id='55'', 'SMW\\SQLStore\\Qu...', Array, Array)
+#5 /home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php(302): SMW\MediaWiki\Database->select('"sunittest_smw_...', 's_id', 'o_id='55'', 'SMW\\SQLStore\\Qu...', Array)
+#6 /home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php(262): SMW\SQLStore\QueryEngine\QuerySegmentListResolver->resolveHierarchyForSegment(Object(SMW\SQLStore\QueryEngine\QuerySegment))
+#7 /home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php(139): SMW\SQLStore\QueryEngine\QuerySegmentListResolver->resolveForSegment(Object(SMW\SQLStore\QueryEngine\QuerySegment))
+#8 /home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php(224): SMW\SQLStore\QueryEngine\QuerySegmentListResolver->resolveForSegment(Object(SMW\SQLStore\QueryEngine\QuerySegment))
+#9 /home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php(139): SMW\SQLStore\QueryEngine\QuerySegmentListResolver->resolveForSegment(Object(SMW\SQLStore\QueryEngine\QuerySegment))
+#10 /home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QuerySegmentListResolver.php(121): SMW\SQLStore\QueryEngine\QuerySegmentListResolver->resolveForSegment(Object(SMW\SQLStore\QueryEngine\QuerySegment))
+#11 /home/s/web/w/extensions/SemanticMediaWiki/src/SQLStore/QueryEngine/QueryEngine.php(216): SMW\SQLStore\QueryEngine\QuerySegmentListResolver->resolveForSegmentId(7)
+#12 /home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php(303): SMW\SQLStore\QueryEngine\QueryEngine->getQueryResult(Object(SMWQuery))
+#13 /home/s/web/w/extensions/SemanticMediaWiki/includes/storage/SQLStore/SMW_SQLStore3.php(294): SMWSQLStore3->fetchQueryResult(Object(SMWQuery))
+#14 /home/s/web/w/extensions/SemanticMediaWiki/includes/query/SMW_QueryProcessor.php(508): SMWSQLStore3->getQueryResult(Object(SMWQuery))
+#15 /home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php(154): SMWQueryProcessor::getResultFromQuery(Object(SMWQuery), Array, 2, 1)
+#16 /home/s/web/w/extensions/SemanticMediaWiki/includes/parserhooks/AskParserFunction.php(115): SMW\AskParserFunction->doFetchResultsForRawParameters(Array)
+#17 /home/s/web/w/extensions/SemanticMediaWiki/src/MediaWiki/Hooks/HookRegistry.php(103): SMW\AskParserFunction->parse(Array)
+#18 [internal function]: SMW\MediaWiki\Hooks\HookRegistry->SMW\MediaWiki\Hooks\{closure}(Object(Parser), '[[Has record pa...', '?#=Internal rec...', 'format=broadtab...')
+#19 /home/s/web/w/includes/parser/Parser.php(3771): call_user_func_array(Object(Closure), Array)
+#20 /home/s/web/w/includes/parser/Parser.php(3505): Parser->callParserFunction(Object(PPFrame_DOM), '#ask', Array)
+#21 /home/s/web/w/includes/parser/Preprocessor_DOM.php(1169): Parser->braceSubstitution(Array, Object(PPFrame_DOM))
+#22 /home/s/web/w/includes/parser/Parser.php(3322): PPFrame_DOM->expand(Object(PPNode_DOM), 0)
+#23 /home/s/web/w/includes/parser/Parser.php(1231): Parser->replaceVariables('== Synopsis ==\n...')
+#24 /home/s/web/w/includes/parser/Parser.php(434): Parser->internalParse('== Synopsis ==\n...')
+#25 /home/s/web/w/includes/content/WikitextContent.php(333): Parser->parse('== Synopsis ==\n...', Object(Title), Object(ParserOptions), true, true, '4043')
+#26 /home/s/web/w/includes/content/AbstractContent.php(497): WikitextContent->fillParserOutput(Object(Title), '4043', Object(ParserOptions), true, Object(ParserOutput))
+#27 /home/s/web/w/includes/page/WikiPage.php(2131): AbstractContent->getParserOutput(Object(Title), '4043', Object(ParserOptions))
+#28 /home/s/web/w/includes/page/WikiPage.php(2182): WikiPage->prepareContentForEdit(Object(WikitextContent), Object(Revision), Object(User))
+#29 /home/s/web/w/includes/Import.php(1615): WikiPage->doEditUpdates(Object(Revision), Object(User), Array)
+#30 [internal function]: WikiRevision->importOldRevision()
+#31 /home/s/web/w/includes/db/Database.php(3338): call_user_func_array(Array, Array)
+#32 /home/s/web/w/includes/Import.php(325): DatabaseBase->deadlockLoop(Array)
+#33 [internal function]: WikiImporter->importRevision(Object(WikiRevision), Object(WikiImporter))
+#34 /home/s/web/w/includes/Import.php(462): call_user_func_array(Array, Array)
+#35 /home/s/web/w/includes/Import.php(835): WikiImporter->revisionCallback(Object(WikiRevision))
+#36 /home/s/web/w/includes/Import.php(782): WikiImporter->processRevision(Array, Array)
+#37 /home/s/web/w/includes/Import.php(731): WikiImporter->handleRevision(Array)
+#38 /home/s/web/w/includes/Import.php(555): WikiImporter->handlePage()
+#39 /home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/Runners/XmlImportRunner.php(82): WikiImporter->doImport()
+#40 /home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Import/RecordDataTypeTest.php(48): SMW\Tests\Utils\Runners\XmlImportRunner->run()
+#41 /home/s/web/w/vendor/phpunit/phpunit/src/Framework/TestCase.php(742): SMW\Tests\Integration\MediaWiki\Import\RecordDataTypeTest->setUp()
+#42 /home/s/web/w/vendor/phpunit/phpunit/src/Framework/TestResult.php(601): PHPUnit_Framework_TestCase->runBare()
+#43 /home/s/web/w/vendor/phpunit/phpunit/src/Framework/TestCase.php(702): PHPUnit_Framework_TestResult->run(Object(SMW\Tests\Integration\MediaWiki\Import\RecordDataTypeTest))
+#44 /home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php(108): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#45 /home/s/web/w/vendor/phpunit/phpunit/src/Framework/TestSuite.php(735): SMW\Tests\MwDBaseUnitTestCase->run(Object(PHPUnit_Framework_TestResult))
+#46 /home/s/web/w/vendor/phpunit/phpunit/src/Framework/TestSuite.php(735): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#47 /home/s/web/w/vendor/phpunit/phpunit/src/Framework/TestSuite.php(735): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#48 /home/s/web/w/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(432): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#49 /home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php(148): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#50 /home/s/web/w/vendor/phpunit/phpunit/src/TextUI/Command.php(100): PHPUnit_TextUI_Command->run(Array, true)
+#51 /home/s/web/w/tests/phpunit/phpunit.php(239): PHPUnit_TextUI_Command::main()
+#52 {main}
+Internal error: Status::getWikiText called for a good result, this is incorrect
+
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Utils/Runners/XmlImportRunner.php:104
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Import/RecordDataTypeTest.php:49
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+--
+
+There were 3 failures:
+
+1) SMW\Tests\MediaWiki\Api\AskArgsTest::testExecuteOnStore with data set #3 (array('Modification date::+', null, null), array(array('', '_wpg', 2, false)))
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+     0 => Array (
+         'label' => ''
+         'typeid' => '_wpg'
+         'mode' => 2
+-        'format' => false
+     )
+ )
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Api/AskArgsTest.php:75
+
+2) SMW\Tests\MediaWiki\Api\AskArgsTest::testExecuteOnStore with data set #4 (array('Modification date::+', 'Modification date', null), array(array('', '_wpg', 2, false), array('Modification date', '_dat', 1, '')))
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+     0 => Array (
+         'label' => ''
+         'typeid' => '_wpg'
+         'mode' => 2
+-        'format' => false
+     )
+     1 => Array (
+         'label' => 'Modification date'
+         'typeid' => '_dat'
+         'mode' => 1
+-        'format' => ''
+     )
+ )
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Api/AskArgsTest.php:75
+
+3) SMW\Tests\MediaWiki\Api\AskTest::testExecute with data set #0 (array('[[Modification date::+]]', '?Modification date', 'limit=10'), array(array('', '_wpg', 2, false), array('Modification date', '_dat', 1, '')))
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+     0 => Array (
+         'label' => ''
+         'typeid' => '_wpg'
+         'mode' => 2
+-        'format' => false
+     )
+     1 => Array (...)
+ )
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/includes/MediaWiki/Api/AskTest.php:58
+
+--
+
+There were 20 skipped tests:
+
+1) SMW\Tests\Integration\MediaWiki\Hooks\FileUploadIntegrationTest::testReUploadDummyTextFileToEditFilePage
+This test depends on "SMW\Tests\Integration\MediaWiki\Hooks\FileUploadIntegrationTest::testFileUploadForDummyTextFile" to pass.
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+2) SMW\Tests\Integration\MediaWiki\Hooks\TitleMoveCompleteIntegrationTest::testPageMoveWithRemovalOfOldPage
+Database was excluded and is not expected to support this test
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:151
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/Hooks/TitleMoveCompleteIntegrationTest.php:105
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+3) SMW\Tests\Integration\MediaWiki\SearchInPageDBIntegrationTest::testSearchForGeographicCoordinateValueAsTerm
+Requires 'Geographic coordinate' to be a supported data type (see Semantic Maps)
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/MediaWiki/SearchInPageDBIntegrationTest.php:62
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+4) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "query-01-04-blob-disjunction.json" ('/home/s/web/w/extensions/Sema...n.json')
+Skip postgres because of Query failed: ERROR:  duplicate key value violates unique constraint, Key (id)=(146) already exists
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:148
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:61
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+5) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "format-01-02-template.json" ('/home/s/web/w/extensions/Sema...e.json')
+Unicode needs special treatment in postgres
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:148
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:61
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+6) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "query-02-01-concept.json" ('/home/s/web/w/extensions/Sema...t.json')
+Unable to run concept tests on postgres, see #781
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:148
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:61
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+7) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "query-01-02-blob.json" ('/home/s/web/w/extensions/Sema...b.json')
+Unable to run concept tests on postgres, failed with duplicate key value violates unique constraint
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:148
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:61
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+8) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "query-02-02-concept-circular.json" ('/home/s/web/w/extensions/Sema...r.json')
+Unable to run concept tests on postgres, see #781
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:148
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:61
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+9) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "format-03-01-category-en.json" ('/home/s/web/w/extensions/Sema...n.json')
+Unicode needs special treatment in postgres
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:148
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:61
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+10) SMW\Tests\Integration\Query\ByJsonQueryTestCaseRunnerTest::executeTestCasesFor with data set "query-01-03-blob.json" ('/home/s/web/w/extensions/Sema...b.json')
+Requires special \ escape sequence on postgres
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:148
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/Query/ByJsonQueryTestCaseRunnerTest.php:61
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/ByJsonTestCaseProvider.php:98
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/MwDBaseUnitTestCase.php:108
+
+11) SMW\Tests\Integration\SPARQLStore\QueryResultLookupWithoutBaseStoreIntegrationTest::testQuerySubjects_afterUpdatingSemanticData
+Requires a SPARQLStore instance
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/SPARQLStore/QueryResultLookupWithoutBaseStoreIntegrationTest.php:51
+
+12) SMW\Tests\Integration\SPARQLStore\QueryResultLookupWithoutBaseStoreIntegrationTest::testQueryZeroResults_afterSubjectRemoval
+Requires a SPARQLStore instance
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/SPARQLStore/QueryResultLookupWithoutBaseStoreIntegrationTest.php:51
+
+13) SMW\Tests\Integration\SPARQLStore\QueryResultLookupWithoutBaseStoreIntegrationTest::testQuerySubjects_onNamspaceRestrictedCondition
+Requires a SPARQLStore instance
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/SPARQLStore/QueryResultLookupWithoutBaseStoreIntegrationTest.php:51
+
+14) SMW\Tests\Integration\SPARQLStore\QueryResultLookupWithoutBaseStoreIntegrationTest::testQuerySubobjects_afterUpdatingWithEmptyContainerAllAssociatedEntitiesGetRemovedFromGraph
+Requires a SPARQLStore instance
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/SPARQLStore/QueryResultLookupWithoutBaseStoreIntegrationTest.php:51
+
+15) SMW\Tests\Integration\SPARQLStore\RedirectLookupIntegrationTest::testRedirectTragetLookupForNonExistingEntry with data set #0 (SMW\Exporter\Element\ExpNsResource Object (...))
+Requires a SPARQLStore instance
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/SPARQLStore/RedirectLookupIntegrationTest.php:38
+
+16) SMW\Tests\Integration\SPARQLStore\RedirectLookupIntegrationTest::testRedirectTragetLookupForNonExistingEntry with data set #1 (SMW\Exporter\Element\ExpNsResource Object (...))
+Requires a SPARQLStore instance
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/SPARQLStore/RedirectLookupIntegrationTest.php:38
+
+17) SMW\Tests\Integration\SPARQLStore\RedirectLookupIntegrationTest::testRedirectTragetLookupForExistingEntry
+Requires a SPARQLStore instance
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/Integration/SPARQLStore/RedirectLookupIntegrationTest.php:38
+
+18) SMW\Tests\System\InstallationGlobalsProviderIntegrityTest::testNamespaceSettingOnExampleIfSet
+Skip test due to missing http://example.org/id/ setting
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/System/InstallationConfigurationIntegrityTest.php:60
+
+19) SMW\Tests\System\InstallationGlobalsProviderIntegrityTest::testNamespacesWithSemanticLinksOnTravisCustomNamespace with data set #0 ('GLOBALS', array(true, false, true, false, true, false, true, false, true, false, true, false, true, false, false, false, false, false, true, false, true, false))
+Test can only be executed with a specified NS_TRAVIS
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/System/InstallationConfigurationIntegrityTest.php:75
+
+20) SMW\Tests\System\InstallationGlobalsProviderIntegrityTest::testNamespacesWithSemanticLinksOnTravisCustomNamespace with data set #1 ('Settings', array(true, false, true, false, true, false, true, false, true, false, true, false, true, false, false, false, false, false, true, false, true, false))
+Test can only be executed with a specified NS_TRAVIS
+
+/home/s/web/w/extensions/SemanticMediaWiki/tests/phpunit/System/InstallationConfigurationIntegrityTest.php:75
+
+FAILURES!
+Tests: 3131, Assertions: 8157, Errors: 23, Failures: 3, Skipped: 20.
+Script php ../../tests/phpunit/phpunit.php -c phpunit.xml.dist handling the phpunit event returned with an error
+
+
+
+  [RuntimeException]
+  Error Output:
+
+
+
+phpunit [--dev] [--no-dev] [args1] ... [argsN]
