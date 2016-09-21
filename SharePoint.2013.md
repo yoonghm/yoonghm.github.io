@@ -15,7 +15,7 @@ Trainer: Bhappy Veronica <Trainer@avantustraining.com>
 * Click ```Site Settings``` -> ```Title, description, and Logo``` to change title, etc.
 * Responsive web pages are supported by CC need to import a site template:
   http://responsivesharepoint.codeplex.com/releases/view/99472
-
+* Use ```Site Contents``` to see various default app for your site. You can add additional app.
 
 https://staffhome2.np.edu.sg/campus/training/sep21/yhm2/Pages/default.aspx
 https://staffhome2.np.edu.sg/campus/training/sep21/Pages/default.aspx
