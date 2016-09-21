@@ -16,6 +16,8 @@ Trainer: Bhappy Veronica <Trainer@avantustraining.com>
 * Responsive web pages are supported by CC need to import a site template:
   http://responsivesharepoint.codeplex.com/releases/view/99472
 * Use ```Site Contents``` to see various default app for your site. You can add additional app.
+* Tab control using jQuery-UI http://summit7systems.com/tabbed-web-parts-in-sharepoint-2013-office-365/
+* Add Apps via ```Add an App```.
 
 https://staffhome2.np.edu.sg/campus/training/sep21/yhm2/Pages/default.aspx
 https://staffhome2.np.edu.sg/campus/training/sep21/Pages/default.aspx
