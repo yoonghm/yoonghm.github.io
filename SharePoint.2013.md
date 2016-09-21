@@ -6,12 +6,15 @@ Trainer: Bhappy Veronica <Trainer@avantustraining.com>
 
 * Access SharePoint site via URL. Login using your given credential.
 * https://staffhome2.np.edu.sg/campus/training/sep21/Pages/default.aspx
-
-## Site
-
 * https://support.office.com/en-gb/article/Create-a-site-c7223010-be7a-4417-ab86-146dbe3548ab
+* Click on the Gear icon within the SharePoint windows and then ```Site Settings``` on the top right corner of the site to see various actions that could be performed, if you have the access rights.
+  https://staffhome2.np.edu.sg/campus/training/sep21/yhm2/_layouts/15/settings.aspx
+* Grant Permissions (contribute, read, full access, etc) via ```Site Settings``` -> ```Site permissions```.
+* Click on "Edit page" to edit ```the``` page.
+* 
  
-
+https://staffhome2.np.edu.sg/campus/training/sep21/yhm2/Pages/default.aspx
+https://staffhome2.np.edu.sg/campus/training/sep21/Pages/default.aspx
 
 ## Questions
 
