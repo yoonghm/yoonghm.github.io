@@ -11,8 +11,12 @@ Trainer: Bhappy Veronica <Trainer@avantustraining.com>
   https://staffhome2.np.edu.sg/campus/training/sep21/yhm2/_layouts/15/settings.aspx
 * Grant Permissions (contribute, read, full access, etc) via ```Site Settings``` -> ```Site permissions```.
 * Click on "Edit page" to edit ```the``` page.
-* 
- 
+* Click ```Site Contents``` to see its sub-sites or contents.
+* Click ```Site Settings``` -> ```Title, description, and Logo``` to change title, etc.
+* Responsive web pages are supported by CC need to import a site template:
+  http://responsivesharepoint.codeplex.com/releases/view/99472
+
+
 https://staffhome2.np.edu.sg/campus/training/sep21/yhm2/Pages/default.aspx
 https://staffhome2.np.edu.sg/campus/training/sep21/Pages/default.aspx
 
